@@ -13,42 +13,50 @@ import "./mobile/responsive.css";
 
 function Menu() {
   const [load, setLoading] = useState(false);
-  
-  const unClicked = () => {
+
+  function unClicked() {
     setLoading(!load);
-    
   }
 
   function reClicked() {
     setLoading(false);
-  
   }
 
   return (
-    <div className="sidebar-nav" tabIndex="0" onBlur={reClicked}>
+    <div className="sidebar-nav" tabIndex="0">
       <div className="unclicked">
         <button onClick={unClicked}>
-          <FaAlignJustify />
+          <FaAlignJustify className="icon" />
         </button>
       </div>
-      <div className="clicked" style={{ display: load ? "block" : "none" }}>
+      <div
+        className="clicked"
+        style={{ display: load ? "block" : "none" }}
+        onChange={reClicked}
+      >
         <button>
-          <AiFillGithub />
+          <a href="https://github.com/desiredstate2021">
+            <AiFillGithub className="icon" />
+          </a>
         </button>
         <button>
-          <AiFillTwitterCircle />
+          <a href="https://twitter.com/CordiscoBrian">
+            <AiFillTwitterCircle className="icon" />
+          </a>
         </button>
         <button>
-          <AiFillLinkedin />
+          <a href="https://www.linkedin.com/in/brian-cordisco-500250205/">
+            <AiFillLinkedin className="icon" />
+          </a>
         </button>
         <button>
-          <AiFillProfile />
+          <AiFillProfile className="icon" />
         </button>
         <button>
-          <AiFillHome />
+          <AiFillHome className="icon" />
         </button>
         <button>
-          <SiAboutdotme />
+          <SiAboutdotme className="icon" />
         </button>
       </div>
     </div>

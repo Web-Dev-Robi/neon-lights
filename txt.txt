@@ -1,65 +1,7 @@
-import React from "react";
-import { useState } from "react";
-import {
-  AiFillGithub,
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiFillProfile,
-  AiFillHome,
-} from "react-icons/ai";
-import { SiAboutdotme } from "react-icons/si";
-import { FaAlignJustify } from "react-icons/fa";
-import "./mobile/responsive.css";
-
-function Menu() {
-  const [load, setLoading] = useState(false);
-  
-
-  function onSeen() {
-
-  }
-
-  function unClicked() {
-    setLoading(true);
-    
-  }
-
-  function reClicked() {
-    setLoading(false);
-  
-  }
-
-  return (
-    <div className="sidebar-nav">
-      <div className={load? "unclicked" : null}>
-        <button onClick={unClicked}>
-          <FaAlignJustify />
-        </button>
-      </div>
-      {load && (
-        <div className="clicked" onClick={reClicked}>
-          <button>
-            <AiFillGithub />
-          </button>
-          <button>
-            <AiFillTwitterCircle />
-          </button>
-          <button>
-            <AiFillLinkedin />
-          </button>
-          <button>
-            <AiFillProfile />
-          </button>
-          <button>
-            <AiFillHome />
-          </button>
-          <button>
-            <SiAboutdotme />
-          </button>
-        </div>
-      )}
-    </div>
-  );
-}
-
-export default Menu;
+font-family: 'Libre Barcode 39', cursive;
+font-family: 'Monofett', cursive;
+font-family: 'Monoton', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Press Start 2P', cursive;
+font-family: 'Rubik Vinyl', cursive;
+font-family: 'Tourney', cursive;

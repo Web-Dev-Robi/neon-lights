@@ -1,9 +1,10 @@
 import React from "react";
+import HomeCard from "./HomeCard";
 
 function Home() {
   return (
-    <div className="main">
-      <h1>Hello World!</h1>
+    <div className="">
+        <HomeCard/>
     </div>
   );
 }

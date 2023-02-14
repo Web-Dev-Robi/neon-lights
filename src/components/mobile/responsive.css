@@ -1,36 +1,67 @@
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 600px) {
   .sidebar-nav {
+    position: absolute;
     visibility: visible;
     display: flex;
-    position: absolute;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(104, 98, 98);
     width: 5%;
   }
 
-
-
-  .clicked {
-
+  .title {
+    margin-left: auto;
+    margin-right: auto;
+    width: 375px;
   }
-  
 
-.nav-container {
+  .icon {
+    width: 25px;
+  }
+
+  .caption {
+    font-size: medium;
+  }
+
+  .moto {
+    font-size: x-small;
+  }
+
+  .title {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 15px;
+    width: 200px;
+  }
+
+  button {
+    color: white;
+    background-color: black;
+    border: solid 3px;
+    border-color: black;
+    border-radius: 5px;
+  }
+
+  button:hover {
+    background-color: #39ff14;
+    box-shadow: 0 0 50px #39ff14;
+    border: solid 3px;
+    border-color: #39ff14;
+  }
+
+  .nav-container {
     visibility: hidden;
     position: absolute;
-}
+  }
 }
 
-
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 601px) {
   .sidebar-nav {
     visibility: hidden;
     position: absolute;
   }
 
-.nav-container {
+  .nav-container {
     visibility: visible;
     position: relative;
     display: flex;
@@ -38,7 +69,6 @@
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-content: center;
-    background-color: rgb(104, 98, 98);
-
-}
+    background-color: #1d212e;
+  }
 }

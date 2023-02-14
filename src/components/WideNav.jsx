@@ -6,13 +6,13 @@ function WideNav() {
   return (
       <div className="nav-container">
         <div className="flex-start">
-          <p>Brian Cordisco</p>
+          <a href="">Brian Cordisco</a>
         </div>
         <div className="flex-end">
-          <p>GitHub</p>
-          <p>Twitter</p>
-          <p>Linkedin</p>
-          <p>Profile</p>
+          <a href="">GitHub</a>
+          <a href="">Twitter</a>
+          <a href="">Linkedin</a>
+          <a href="">Profile</a>
           <button className="button-home">Home</button>
           <button className="button-about">About</button>
         </div>

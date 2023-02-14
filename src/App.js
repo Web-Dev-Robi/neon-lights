@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <ResponsiveNav/>
-      <main className="main">
+      <main className="home">
           <Home/>
       </main>
       <Footer />

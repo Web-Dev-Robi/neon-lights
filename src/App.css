@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Libre+Barcode+39&family=Monofett&family=Monoton&family=Permanent+Marker&family=Press+Start+2P&family=Rubik+Vinyl&family=Tourney:ital,wght@0,400;1,100;1,400;1,700&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  width: 100%vw;
+  overflow: hidden;
 }
 
 .nav-container {
@@ -12,6 +14,7 @@ body {
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-content: center;
+  font-family: "Monofett", cursive;
 }
 
 .flex-start {
@@ -19,20 +22,73 @@ body {
   margin: 15px;
 }
 
+.flex-start a {
+  text-decoration: underline;
+  text-decoration-color: #39ff14;
+  color: #39ff14;
+  font-size: xx-large;
+}
+
 .flex-end {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-end;
+  align-items: center;
   width: 50%;
   gap: 15px;
   margin: 15px;
 }
 
+.flex-end a {
+  color: RGB(4, 255, 247);
+  text-decoration: none;
+  font-size: xx-large;
+}
+
+a {
+  color: #ffffff;
+}
+
+.caption {
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  font-style: italic;
+  font-size: 24px;
+}
+
+.moto {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+  text-align: center;
+  font-weight: 600;
+}
+
+.home {
+  
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  border: solid 3px black;
+  width: 350px;
+}
+
+.title-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+}
+
 .sidebar-nav {
   display: flex;
   align-items: center;
-  background-color: rgb(104, 98, 98);
   flex-direction: column;
   justify-content: center;
   padding: 10px;
@@ -49,32 +105,22 @@ body {
   height: 20px;
 }
 
-.footer-content {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .footer-items {
+  background-color: aqua;
+  bottom: 0;
   display: flex;
   flex-direction: column;
+  position: fixed;
+  width: 100%;
 }
 
 .footer-link {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  font-family: "Press Start 2P", cursive;
   padding: 20px;
   gap: 20px;
-}
-
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: aqua;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 }
 
 .main {
@@ -82,7 +128,6 @@ body {
   justify-content: center;
   align-content: center;
   background-color: chocolate;
-  height: 100%vh;
 }
 
 .unclicked {
