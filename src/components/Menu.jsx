@@ -12,20 +12,20 @@ import { FaAlignJustify } from "react-icons/fa";
 import "./mobile/responsive.css";
 
 function Menu() {
-  const [load, setLoading] = useState(true);
+  const [load, setLoading] = useState(false);
   
   const unClicked = () => {
     setLoading(!load);
     
   }
 
-  // function reClicked() {
-  //   setLoading(false);
+  function reClicked() {
+    setLoading(false);
   
-  // }
+  }
 
   return (
-    <div className="sidebar-nav">
+    <div className="sidebar-nav" tabIndex="0" onBlur={reClicked}>
       <div className="unclicked">
         <button onClick={unClicked}>
           <FaAlignJustify />
