@@ -1,5 +1,6 @@
 import './App.css';
-import Nav from './components/Nav';
+import './components/mobile/responsive.css'
+import ResponsiveNav from './components/ResponsiveNav'
 import Footer from './components/Footer';
 import Home from './components/Home';
 
@@ -8,7 +9,7 @@ import Home from './components/Home';
 function App() {
   return (
     <div className="App">
-      <Nav />
+      <ResponsiveNav/>
       <main className="main">
           <Home/>
       </main>

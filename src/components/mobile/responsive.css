@@ -1,0 +1,44 @@
+@media screen and (max-width: 520px) {
+  .sidebar-nav {
+    visibility: visible;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(104, 98, 98);
+    width: 5%;
+  }
+
+
+
+  .clicked {
+
+  }
+  
+
+.nav-container {
+    visibility: hidden;
+    position: absolute;
+}
+}
+
+
+@media screen and (min-width: 520px) {
+  .sidebar-nav {
+    visibility: hidden;
+    position: absolute;
+  }
+
+.nav-container {
+    visibility: visible;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    background-color: rgb(104, 98, 98);
+
+}
+}
