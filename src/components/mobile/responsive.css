@@ -42,11 +42,19 @@
     border-radius: 5px;
   }
 
-  button:hover {
-    background-color: #39ff14;
-    box-shadow: 0 0 50px #39ff14;
+  .pink-btn:hover {
+    background-color: #0827f5;
+    box-shadow: 0 4px 10px #39ff14;
     border: solid 3px;
-    border-color: #39ff14;
+    border-color: #0827f5;
+  }
+
+  .dark-btn:hover {
+     background-color: #d9027d;
+    box-shadow: 0 4px 10px #39ff14;
+    border: solid 3px;
+    border-color: #d9027d;
+
   }
 
   .nav-container {

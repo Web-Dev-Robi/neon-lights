@@ -6,6 +6,10 @@ body {
   margin: 0;
   box-sizing: border-box;
   overflow: hidden;
+background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); 
+
 }
 
 .App {
@@ -143,6 +147,7 @@ a {
   flex-direction: row;
   justify-content: center;
   font-family: "Press Start 2P", cursive;
+  font-size: x-small;
   padding: 10px;
   gap: 20px;
 }
@@ -222,6 +227,6 @@ a {
   background-color: black;
   border: solid 1px black;
   border-radius: 25px;
-  box-shadow:  0 5px 0 #0827f5, 0 4px 2px 0 #0827f5;
-  color:white;
+  box-shadow: 0 5px 0 #0827f5, 0 4px 2px 0 #0827f5;
+  color: white;
 }

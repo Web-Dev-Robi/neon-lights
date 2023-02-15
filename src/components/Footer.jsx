@@ -7,9 +7,9 @@ function Footer() {
     <>
       <div className="footer-items">
         <div className="footer-link">
-          <div>erer</div>
-          <div>ergegg</div>
-          <div>ergerg</div>
+          <div>Inspiration</div>
+          <div>Hobbies</div>
+          <div>Photo Album</div>
         </div>
         <div className="contact-link">
           <div>Contact</div>
