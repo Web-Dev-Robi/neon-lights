@@ -1,7 +1,0 @@
-font-family: 'Libre Barcode 39', cursive;
-font-family: 'Monofett', cursive;
-font-family: 'Monoton', cursive;
-font-family: 'Permanent Marker', cursive;
-font-family: 'Press Start 2P', cursive;
-font-family: 'Rubik Vinyl', cursive;
-font-family: 'Tourney', cursive;
