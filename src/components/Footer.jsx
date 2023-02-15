@@ -11,11 +11,12 @@ function Footer() {
           <div>ergegg</div>
           <div>ergerg</div>
         </div>
-        <div className="footer-link">
+        <div className="contact-link">
           <div>Contact</div>
+          <div className="barcode-font">CONTACT</div>
         </div>
-        <div className="footer-link">
-          <div>
+        <div className="copyright-link">
+          <div className="copyright">
             <p>Copyright &copy; {footerYear} Brian Cordisco</p>
           </div>
         </div>

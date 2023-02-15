@@ -8,12 +8,20 @@ body {
   overflow: hidden;
 }
 
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
 .nav-container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-content: center;
+  align-items: center;
   font-family: "Monofett", cursive;
 }
 
@@ -51,21 +59,30 @@ a {
 }
 
 .caption {
+  color: RGB(4, 255, 247);
   text-align: center;
   font-family: "Permanent Marker", cursive;
   font-style: italic;
   font-size: 24px;
 }
 
+.copyright {
+  font-size: small;
+}
+
 .moto {
   font-family: "IBM Plex Mono", monospace;
+  color: #cefaf893;
   font-weight: bold;
   text-align: center;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .home {
-  
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
 }
 
 .title {
@@ -96,17 +113,24 @@ a {
 }
 
 .button-home {
+  background-color: #0827f5;
+  border: solid 1px #0827f5;
+  border-radius: 10px;
   align-self: center;
   height: 20px;
 }
 
 .button-about {
+  background-color: #d9027d;
+  border: solid 1px #d9027d;
+  border-radius: 10px;
   align-self: center;
   height: 20px;
 }
 
 .footer-items {
-  background-color: aqua;
+  background-color: #1d212e;
+  color: RGB(4, 255, 247);
   bottom: 0;
   display: flex;
   flex-direction: column;
@@ -119,15 +143,26 @@ a {
   flex-direction: row;
   justify-content: center;
   font-family: "Press Start 2P", cursive;
-  padding: 20px;
+  padding: 10px;
   gap: 20px;
 }
 
-.main {
+.barcode-font {
+  font-family: "Libre Barcode 39";
+  font-size: larger;
+}
+
+.contact-link {
+  margin-top: 5px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-content: center;
-  background-color: chocolate;
+  align-items: center;
+  font-family: "Press Start 2P", cursive;
+}
+
+.copyright-link {
+  align-self: center;
 }
 
 .unclicked {
@@ -140,4 +175,53 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.nav-buttons {
+  margin-top: 5px;
+  display: flex;
+  gap: 10px;
+}
+
+.left-circle {
+  margin-left: 5px;
+  margin-top: 3px;
+  color: #2e67f8;
+}
+
+.right-circle {
+  margin-top: 3px;
+  color: #2e67f8;
+}
+
+.project-button,
+.blog-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+.code-icon {
+  margin-top: 4px;
+}
+
+.blog-icon {
+  margin-top: 4px;
+  color: white;
+}
+
+.pink-btn {
+  background-color: #d9027d;
+  border: solid 1px #d9027d;
+  border-radius: 25px;
+}
+
+.dark-btn {
+  background-color: black;
+  border: solid 1px black;
+  border-radius: 25px;
+  box-shadow:  0 5px 0 #0827f5, 0 4px 2px 0 #0827f5;
+  color:white;
 }

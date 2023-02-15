@@ -1,4 +1,6 @@
 import React from "react";
+import { RiCodeBoxLine } from "react-icons/ri";
+import { TfiThemifyFaviconAlt } from "react-icons/tfi";
 
 function HomeCard() {
   return (
@@ -17,8 +19,22 @@ function HomeCard() {
           </p>
         </div>
         <div className="title-buttons">
-          <button>PROJECTS</button>
-          <button>BLOG</button>
+          <button className="pink-btn">
+            <div className="project-button">
+              <div>PROJECTS</div>
+              <div className="code-icon">
+                <RiCodeBoxLine />
+              </div>
+            </div>
+          </button>
+          <button className="dark-btn">
+            <div className="blog-button">
+              <div>BLOG</div>
+              <div className="blog-icon">
+                <TfiThemifyFaviconAlt />
+              </div>
+            </div>
+          </button>
         </div>
       </div>
     </div>
