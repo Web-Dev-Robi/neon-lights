@@ -12,7 +12,9 @@
   .title {
     margin-left: auto;
     margin-right: auto;
+    padding: 10px;
     width: 375px;
+    height: 235px;
   }
 
   .icon {
@@ -24,6 +26,10 @@
   }
 
   .moto {
+    font-size: x-small;
+  }
+
+  .footer-link {
     font-size: x-small;
   }
 
@@ -42,19 +48,13 @@
     border-radius: 5px;
   }
 
-  .pink-btn:hover {
-    background-color: #0827f5;
-    box-shadow: 0 4px 10px #39ff14;
-    border: solid 3px;
-    border-color: #0827f5;
-  }
 
-  .dark-btn:hover {
-     background-color: #d9027d;
-    box-shadow: 0 4px 10px #39ff14;
-    border: solid 3px;
-    border-color: #d9027d;
-
+  .neon-button {
+    overflow: hidden;
+    font-size: 0.80rem;
+    width: 55px;
+    height: 15px;
+    padding: 0.12em 0.5em;
   }
 
   .nav-container {
@@ -68,6 +68,7 @@
     visibility: hidden;
     position: absolute;
   }
+  
 
   .nav-container {
     visibility: visible;
