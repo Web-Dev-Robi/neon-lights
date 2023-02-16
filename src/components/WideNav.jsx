@@ -1,16 +1,16 @@
-import React from 'react'
-import { SiCircle }from "react-icons/si";
+import React from "react";
+import { SiCircle } from "react-icons/si";
 
 function WideNav() {
-
-
   return (
     <div className="nav-container">
-      <div className="left-circle">
-        <SiCircle />
-      </div>
-      <div className="flex-start">
-        <a href="">Brian Cordisco</a>
+      <div className="nav-name">
+        <div className="left-circle">
+          <SiCircle />
+        </div>
+        <div className="flex-start">
+          <a href="">Brian Cordisco</a>
+        </div>
       </div>
       <div className="flex-end">
         <a href="">GitHub</a>
@@ -28,4 +28,4 @@ function WideNav() {
   );
 }
 
-export default WideNav
+export default WideNav;

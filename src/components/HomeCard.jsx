@@ -4,7 +4,7 @@ import { TfiThemifyFaviconAlt } from "react-icons/tfi";
 
 function HomeCard() {
   return (
-    <div className="glass">
+    <div className="">
       <div className="title">
         <div className="title-caption">
           <h1 className="caption">
@@ -18,9 +18,9 @@ function HomeCard() {
             they are impressive."
           </p>
         </div>
-        <a href="" className="neon-button">Projects</a>
-
-        
+        <a href="" className="neon-button">
+          Projects
+        </a>
       </div>
     </div>
   );

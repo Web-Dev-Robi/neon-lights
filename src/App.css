@@ -10,15 +10,28 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  display: grid;
-  justify-self: auto;
-  grid-template-columns: repeat(3 (1fr));
+  overflow: hidden;
   min-height: 100vh;
   background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
   background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
 }
 
-.App {
+.container {
+  display: grid;
+  grid-template-columns: 4 1fr;
+  grid-template-rows: 12 1fr;
+  justify-content: center;
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 50%;
+  align-items: center;
 }
 
 .nav-container {
@@ -32,7 +45,6 @@ body {
 }
 
 .flex-start {
-  width: 50%;
   margin: 15px;
 }
 
@@ -84,12 +96,6 @@ a {
   font-weight: 400;
 }
 
-.home {
-  display: grid;
-  justify-content: center;
-  margin-top: 50px;
-}
-
 .title {
   display: flex;
   padding: 20px;
@@ -106,14 +112,18 @@ a {
   height: 600px;
 }
 
-.sidebar-nav {
+.container {
+  display: grid;
+}
+
+/* .sidebar-nav {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   padding: 10px;
   width: 5%;
-}
+} */
 
 .button-home {
   background-color: #0827f5;
@@ -169,17 +179,6 @@ a {
   align-self: center;
 }
 
-.unclicked {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.clicked {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
 .nav-buttons {
   margin-top: 5px;
@@ -198,42 +197,11 @@ a {
   color: #2e67f8;
 }
 
-.project-button,
-.blog-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 3px;
-}
-
-.code-icon {
-  margin-top: 4px;
-}
-
-.blog-icon {
-  margin-top: 4px;
-  color: white;
-}
-
-.pink-btn {
-  background-color: #d9027d;
-  border: solid 1px #d9027d;
-  border-radius: 25px;
-}
-
-.dark-btn {
-  background-color: black;
-  border: solid 1px black;
-  border-radius: 25px;
-  box-shadow: 0 5px 0 #0827f5, 0 4px 2px 0 #0827f5;
-  color: white;
-}
-
 .neon-button {
   font-family: monospace;
   position: relative;
   display: inline-block;
+  align-self: center;
   cursor: pointer;
   color: var(--clr-neon);
   text-align: center;
@@ -258,12 +226,11 @@ a {
   width: 100%;
   height: 100%;
 
-  transform: perspective(1em) rotateX(40deg) scale(1, .25);
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.25);
   filter: blur(1.5em);
   opacity: 0.9;
   transition: background-color 100ms linear;
 }
-
 
 .neon-button:hover,
 .neon-button:focus {
@@ -284,10 +251,9 @@ a {
   transition: opacity 100ms linear;
 }
 
-.neon-button:hover::before {
-  opacity: 1;
-}
-
-.neon-button:hover::after {
+.neon-button:hover::before,
+.neon-button:focus::before,
+.neon-button:hover::after,
+.neon-button:focus::after {
   opacity: 1;
 }
