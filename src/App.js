@@ -1,21 +1,28 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import './components/mobile/responsive.css'
 import ResponsiveNav from './components/ResponsiveNav'
 import Footer from './components/Footer';
-import Home from './components/Home';
+import AboutMe from './components/pages/AboutMe';
+import HomeCard from './components/pages/HomeCard';
 
 
 
 function App() {
   
   return (
-    <div className="App">
-      <ResponsiveNav />
-      <main className="container">
-        <Home />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <ResponsiveNav />
+        <main className="container">
+          <Routes>
+            <Route path='/' element={<HomeCard />} />
+            <Route path='/aboutme' element={<AboutMe />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
