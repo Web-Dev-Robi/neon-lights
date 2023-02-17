@@ -7,6 +7,7 @@ import HomeCard from './components/HomeCard';
 
 
 function App() {
+  
   return (
     <div className="App">
       <ResponsiveNav/>

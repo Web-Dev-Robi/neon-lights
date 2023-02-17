@@ -10,11 +10,16 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow: hidden;
-  min-height: 100vh;
-  width: auto;
+  overflow-x: hidden;
   background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
   background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background-repeat: repeat;
+   background-size: auto;
+    background-origin: content-box;
+}
+
+.App {
+overflow-x: hidden;
 }
 
 .container {
@@ -29,6 +34,7 @@ body {
 
 .nav-name {
   display: flex;
+  float: right;
   flex-direction: row;
   justify-content: flex-start;
   width: 50%;
@@ -113,9 +119,6 @@ a {
   height: 600px;
 } */
 
-.container {
-  display: grid;
-}
 
 
 .button-home {
@@ -134,6 +137,10 @@ a {
   height: 20px;
 }
 
+/* .footer {
+  width: 100%vw;
+} */
+
 .footer-items {
   background-color: #1d212e;
   color: RGB(4, 255, 247);
@@ -141,8 +148,9 @@ a {
   display: flex;
   flex-direction: column;
   position: fixed;
-  width: 100vw;
-  overflow: hidden;
+  min-width: 375px;
+  max-width: 1440px;
+  width: 100%;
 }
 
 .footer-link {

@@ -1,6 +1,4 @@
 import React from "react";
-import { RiCodeBoxLine } from "react-icons/ri";
-import { TfiThemifyFaviconAlt } from "react-icons/tfi";
 
 function HomeCard() {
   return (

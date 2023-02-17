@@ -4,8 +4,8 @@ function Footer() {
   const footerYear = new Date().getFullYear();
 
   return (
-    <>
-      <div className="footer-items">
+    <div className="footer">
+      <div className="footer-items" style={{ overflowBlock: "auto hidden" }}>
         <div className="footer-link">
           <div>Inspiration</div>
           <div>Hobbies</div>
@@ -21,7 +21,7 @@ function Footer() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

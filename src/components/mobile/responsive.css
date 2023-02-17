@@ -1,17 +1,23 @@
 @media screen and (max-width: 900px) {
   .sidebar-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: nowrap;
-    /* align-content: center; */
+    align-content: center;
     height: 10vh;
+    width: auto;
  
   }
 
   .clicked {
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     gap: 10px;
   }
@@ -80,15 +86,10 @@
 
   .nav-container {
     visibility: hidden;
-    position: absolute;
   }
-/* 
-  .flex-end {
-    visibility: hidden;
-  } */
 }
 
-@media screen and (min-width: 901px) {
+@media screen and (min-width: 900px) {
   .sidebar-nav {
     visibility: hidden;
     position: absolute;
