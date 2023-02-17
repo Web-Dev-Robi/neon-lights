@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import {
   AiFillGithub,
   AiFillTwitterCircle,
@@ -8,32 +7,17 @@ import {
   AiFillHome,
 } from "react-icons/ai";
 import { SiAboutdotme } from "react-icons/si";
-import { FaAlignJustify } from "react-icons/fa";
 import "./mobile/responsive.css";
 
 function Menu() {
-  const [load, setLoading] = useState(false);
 
-  function unClicked() {
-    setLoading(!load);
-  }
-
-  function reClicked() {
-    setLoading(false);
-  }
 
   return (
-    <div className="sidebar-nav" tabIndex="0">
-      <div className="unclicked">
-        <button onClick={unClicked}>
-          <FaAlignJustify className="icon" />
+    <div className="sidebar-nav">
+      <div className="clicked">
+        <button>
+          <AiFillHome className="icon" />
         </button>
-      </div>
-      <div
-        className="clicked"
-        style={{ display: load ? "block" : "none" }}
-        onChange={reClicked}
-      >
         <button>
           <a href="https://github.com/desiredstate2021">
             <AiFillGithub className="icon" />
@@ -51,9 +35,6 @@ function Menu() {
         </button>
         <button>
           <AiFillProfile className="icon" />
-        </button>
-        <button>
-          <AiFillHome className="icon" />
         </button>
         <button>
           <SiAboutdotme className="icon" />
