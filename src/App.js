@@ -2,7 +2,7 @@ import './App.css';
 import './components/mobile/responsive.css'
 import ResponsiveNav from './components/ResponsiveNav'
 import Footer from './components/Footer';
-import HomeCard from './components/HomeCard';
+import Home from './components/Home';
 
 
 
@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <ResponsiveNav />
       <main className="container">
-        <HomeCard />
+        <Home />
       </main>
       <Footer />
     </div>

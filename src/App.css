@@ -10,28 +10,31 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
   background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
   background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
-  background-repeat: repeat;
-  background-size: auto;
-  background-origin: content-box;
+  overflow-x: hidden;
 }
 
 .App {
- 
-
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: auto;
 }
 
-/* .container {
-  display: grid;
-  grid-template-columns: 4 1fr;
-  grid-template-rows: 12 1fr;
+.home-card-container {
+}
+
+
+
+.container {
+  display: flex;
   justify-content: center;
-  margin-top: 15%;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
-} */
+  min-height: 100vh;
+}
 
 .nav-name {
   display: flex;
@@ -136,16 +139,15 @@ a {
   height: 20px;
 }
 
-
+.footer {
+  height: 50px;
+}
 
 .footer-items {
   background-color: #1d212e;
   color: RGB(4, 255, 247);
-  bottom: 0;
   display: flex;
   flex-direction: column;
-  position: fixed;
-  width: 100vw;
 }
 
 .footer-link {

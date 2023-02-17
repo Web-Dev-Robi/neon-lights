@@ -2,7 +2,7 @@ import React from "react";
 
 function HomeCard() {
   return (
-    <div className="">
+    <div className="home-card-container">
       <div className="title">
         <div className="title-caption">
           <h1 className="caption">

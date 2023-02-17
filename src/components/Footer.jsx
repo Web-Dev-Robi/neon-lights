@@ -5,7 +5,7 @@ function Footer() {
 
   return (
     <div className="footer">
-      <div className="footer-items" style={{ overflowBlock: "auto hidden" }}>
+      <div className="footer-items">
         <div className="footer-link">
           <div>Inspiration</div>
           <div>Hobbies</div>
