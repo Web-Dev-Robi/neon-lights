@@ -10,9 +10,9 @@ function App() {
   
   return (
     <div className="App">
-      <ResponsiveNav/>
+      <ResponsiveNav />
       <main className="container">
-           <HomeCard/>
+        <HomeCard />
       </main>
       <Footer />
     </div>

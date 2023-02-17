@@ -14,15 +14,16 @@ body {
   background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
   background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
   background-repeat: repeat;
-   background-size: auto;
-    background-origin: content-box;
+  background-size: auto;
+  background-origin: content-box;
 }
 
 .App {
-overflow-x: hidden;
+ 
+
 }
 
-.container {
+/* .container {
   display: grid;
   grid-template-columns: 4 1fr;
   grid-template-rows: 12 1fr;
@@ -30,7 +31,7 @@ overflow-x: hidden;
   margin-top: 15%;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 .nav-name {
   display: flex;
@@ -119,8 +120,6 @@ a {
   height: 600px;
 } */
 
-
-
 .button-home {
   background-color: #0827f5;
   border: solid 1px #0827f5;
@@ -137,9 +136,7 @@ a {
   height: 20px;
 }
 
-/* .footer {
-  width: 100%vw;
-} */
+
 
 .footer-items {
   background-color: #1d212e;
@@ -148,9 +145,7 @@ a {
   display: flex;
   flex-direction: column;
   position: fixed;
-  min-width: 375px;
-  max-width: 1440px;
-  width: 100%;
+  width: 100vw;
 }
 
 .footer-link {
