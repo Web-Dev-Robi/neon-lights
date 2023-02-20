@@ -5,6 +5,7 @@ import ResponsiveNav from './components/ResponsiveNav'
 import Footer from './components/Footer';
 import AboutMe from './components/pages/AboutMe';
 import HomeCard from './components/pages/HomeCard';
+import Projects from './components/pages/Projects';
 
 
 
@@ -18,6 +19,7 @@ function App() {
           <Routes>
             <Route path='/' element={<HomeCard />} />
             <Route path='/aboutme' element={<AboutMe />} />
+            <Route path='/projects' element={<Projects />} />
           </Routes>
         </main>
         <Footer />

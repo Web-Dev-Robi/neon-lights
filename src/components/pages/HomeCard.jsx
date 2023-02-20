@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function HomeCard() {
   return (
@@ -16,9 +17,11 @@ function HomeCard() {
             they are impressive."
           </p>
         </div>
-        <a href="" className="neon-button">
-          Projects
-        </a>
+        <Link to="/projects">
+          <a href="" className="neon-button">
+            Projects
+          </a>
+        </Link>
       </div>
     </div>
   );

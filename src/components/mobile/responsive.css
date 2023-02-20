@@ -12,7 +12,6 @@
     align-content: center;
     height: 10vh;
     width: auto;
- 
   }
 
   .clicked {
@@ -32,7 +31,8 @@
 
   .icon {
     width: 1.5em;
-    height: 1.5em
+    height: 1.5em;
+    color: #39ff14;
   }
 
   .caption {
@@ -86,6 +86,24 @@
 
   .nav-container {
     visibility: hidden;
+  }
+
+  .about-me-container {
+    border: solid 2px #39ff14;
+    display: grid;
+    align-items: center;
+    grid-template-areas:
+      "image-section-one image-section-one image-section-one"
+      "title text text"
+      "image-section-two image-section-two image-section-two";
+  }
+
+  .about-container {
+    height: fit-content;
+    width: 350px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
   }
 }
 

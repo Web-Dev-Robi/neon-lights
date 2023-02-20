@@ -8,6 +8,7 @@ import {
 } from "react-icons/ai";
 import { SiAboutdotme } from "react-icons/si";
 import "./mobile/responsive.css";
+import { Link } from "react-router-dom";
 
 function Menu() {
 
@@ -36,9 +37,11 @@ function Menu() {
         <button>
           <AiFillProfile className="icon" />
         </button>
-        <button>
-          <SiAboutdotme className="icon" />
-        </button>
+        <Link to="aboutme">
+          <button>
+            <SiAboutdotme className="icon" />
+          </button>
+        </Link>
       </div>
     </div>
   );
