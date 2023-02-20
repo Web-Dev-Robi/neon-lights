@@ -84,9 +84,6 @@
     box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
   }
 
-  .nav-container {
-    visibility: hidden;
-  }
 
   .about-me-container {
     border: solid 2px #39ff14;

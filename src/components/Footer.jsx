@@ -1,22 +1,24 @@
 import React from "react";
+import styles from "../components/styles/Footer.module.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const footerYear = new Date().getFullYear();
 
   return (
-    <div className="footer">
-      <div className="footer-items">
-        <div className="footer-link">
-          <div>Inspiration</div>
-          <div>Hobbies</div>
-          <div>Photo Album</div>
+    <div className={styles.footer}>
+      <div className={styles.footer_items}>
+        <div className={styles.footer_link}>
+          <Link to="inspiration">Inspiration</Link>
+          <Link to="hobbies">Hobbies</Link>
+          <Link to="photoalbum">Photo Album</Link>
         </div>
-        <div className="contact-link">
-          <div>Contact</div>
-          <div className="barcode-font">CONTACT</div>
+        <div className={styles.contact_link}>
+          <Link to="contact">Contact</Link>
+          <Link className={styles.barcode_font}>CONTACT</Link>
         </div>
-        <div className="copyright-link">
-          <div className="copyright">
+        <div className={styles.copyright_link}>
+          <div className={styles.copyright}>
             <p>Copyright &copy; {footerYear} Brian Cordisco</p>
           </div>
         </div>

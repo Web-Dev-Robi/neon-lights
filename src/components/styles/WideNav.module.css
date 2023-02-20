@@ -1,5 +1,14 @@
+root {
+  --clr-neon: hsl(317 100% 54%);
+  --clr-bg: hsl(323 21% 16%);
+  --clr-neon-blue: hsl(232, 94%, 50%);
+}
+
+
+
 .container {
     padding: 15px;
+    background-color: #1d212e;
 }
 
 
@@ -25,6 +34,12 @@
   width: 50%;
 }
 
+.circle {
+  color: #cefaf893;
+  align-self: center;
+  /* padding-top: 9px; */
+}
+
 .nav_buttons {
   display: flex;
   gap: 15px;
@@ -35,9 +50,10 @@
 .linkedin {
   font-family: "Monofett", cursive;
   font-size: xx-large;
+  color: RGB(4, 255, 247);
 }
 
-.buttonhome {
+.home_button {
   color: var(--clr-neon-blue);
   text-align: center;
   font-size: 0.75rem;
@@ -51,7 +67,7 @@
     0 0 0.5em 0 var(--clr-neon-blue);
 }
 
-.button-home::after {
+.home_button::after {
   content: "";
   position: relative;
   top: 0;
@@ -63,7 +79,7 @@
   transition: opacity 100ms linear;
 }
 
-.button-about {
+.about_button {
   color: var(--clr-neon);
   text-align: center;
   font-size: 0.75rem;
@@ -76,27 +92,44 @@
   box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
 }
 
-.button-home:hover,
-.button-home:focus {
+.home_button:hover,
+.home_buton:focus {
   background-color: var(--clr-neon-blue);
-  color: var(--clr-bg);
+  color: hsl(323 21% 16%);;
   text-shadow: none;
 }
 
-.button-about:hover,
-.button-about:focus {
+.nav_left a{
+   text-decoration: underline;
+  text-decoration-color: #39ff14;
+   font-family: "Monofett", cursive;
+  color: #39ff14;
+  font-size: xx-large;
+}
+
+.about_button:hover,
+.about_button:focus {
   background-color: var(--clr-neon);
-  color: var(--clr-bg);
+  color: hsl(323 21% 16%);;
   text-shadow: none;
 }
 
-.button-home:hover::before,
-.button-home:focus::before,
-.button-home:hover::after,
-.button-home:focus::after,
-.button-about:hover::before,
-.button-about:focus::before,
-.button-about:hover::after,
-.button-about:focus::after {
+.home_button:hover::before,
+.home_button:focus::before,
+.home_button:hover::after,
+.home_button:focus::after,
+.about_button:hover::before,
+.about_button:focus::before,
+.about_button:hover::after,
+.about_button:focus::after {
   opacity: 1;
+}
+
+
+
+@media screen and (max-width: 1020px){
+  .container {
+    visibility: hidden;
+}
+  
 }

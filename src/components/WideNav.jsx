@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { SiCircle } from "react-icons/si";
-import styles from "../components/styles/MobileNav.module.css"
+import styles from "../components/styles/WideNav.module.css"
 
 
 function WideNav() {
@@ -9,25 +9,29 @@ function WideNav() {
     <div className={styles.container}>
       <div className={styles.nav_container}>
         <div className={styles.nav_left}>
-          <div className="left_circle">
+          <div className={styles.circle}>
             <SiCircle />
           </div>
-          <Link to="/">
-            <a href="">Brian Cordisco</a>
-          </Link>
+          <Link to="/">Brian Cordisco</Link>
         </div>
         <div className={styles.nav_right}>
-          <a href="" className={styles.git}>
+          <a href="https://github.com/desiredstate2021" className={styles.git}>
             GitHub
           </a>
-          <a href="" className={styles.twitter}>
+          <a
+            href="https://twitter.com/CordiscoBrian"
+            className={styles.twitter}
+          >
             Twitter
           </a>
-          <a href="" className={styles.linkedin}>
+          <a
+            href="https://www.linkedin.com/in/brian-cordisco-500250205/"
+            className={styles.linkedin}
+          >
             Linkedin
           </a>
           <div className={styles.nav_buttons}>
-            <div className="right-circle">
+            <div className={styles.circle}>
               <SiCircle />
             </div>
             <Link to="/" className={styles.home_button}>

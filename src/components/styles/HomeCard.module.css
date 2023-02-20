@@ -1,0 +1,104 @@
+:root {
+  --clr-neon: hsl(317 100% 54%);
+  --clr-bg: hsl(323 21% 16%);
+  --clr-neon-blue: hsl(232, 94%, 50%);
+}
+
+
+
+
+.title {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  border: solid 3px black;
+  width: 350px;
+  height: 360px;
+}
+
+
+.moto {
+  font-family: "IBM Plex Mono", monospace;
+  color: #cefaf893;
+  font-weight: bold;
+  text-align: center;
+  font-weight: 400;
+}
+
+.title a {
+  display: grid;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.caption {
+  color: RGB(4, 255, 247);
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  font-style: italic;
+  font-size: 24px;
+}
+
+.neon_button {
+  font-family: monospace;
+  position: relative;
+  display: inline-block;
+  align-self: center;
+  cursor: pointer;
+  color: var(--clr-neon);
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  width: 95px;
+  border: var(--clr-neon) 0.125em solid;
+  border-radius: 0.25em;
+  padding: 0.25em 1em;
+  text-shadow: 0 0 0.125em var(--clr-neon), 0 0 0.45em var(--clr-neon);
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+}
+
+.neon_button::before {
+  pointer-events: none;
+  overflow: hidden;
+  content: "";
+  background-color: var(--clr-neon);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.25);
+  filter: blur(1.5em);
+  opacity: 0.9;
+  transition: background-color 100ms linear;
+}
+
+.neon_button:hover,
+.neon_button:focus {
+  background-color: var(--clr-neon);
+  color: var(--clr-bg);
+  text-shadow: none;
+}
+
+.neon_button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em var(--clr-neon);
+  opacity: 0;
+  transition: opacity 100ms linear;
+}
+
+.neon_button:hover::before,
+.neon_button:focus::before,
+.neon_button:hover::after,
+.neon_button:focus::after {
+  opacity: 1;
+}

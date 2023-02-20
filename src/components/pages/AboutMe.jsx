@@ -1,10 +1,11 @@
 import React from "react";
 import test from '../assets/testtwo.jpg'
+import styles from "../styles/AboutMe.module.css"
 
 function AboutMe() {
   return (
-    <div className="about-container">
-      <div className="about-me-container">
+    <div className={styles.about_container}>
+      <div className={styles.about_me_container}>
         <h2>My Story</h2>
         <img src={test} height="500px" alt="" />
         <p>

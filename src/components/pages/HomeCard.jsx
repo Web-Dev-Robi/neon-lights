@@ -1,15 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import styles from '../styles/HomeCard.module.css'
 
 function HomeCard() {
   return (
     <div className="home-card-container">
-      <div className="title">
-        <div className="title-caption">
-          <h1 className="caption">
+      <div className={styles.title}>
+        <div className={styles.title_caption}>
+          <h1 className={styles.caption}>
             "Crafting the Web, <br></br>One Pixel at a Time"
           </h1>
-          <p className="moto">
+          <p className={styles.moto}>
             "Bringing your vision to life with passion and precision! As an avid
             web developer, I'm driven by a relentless passion for coding and a
             hunger to keep learning the latest technologies. Let's collaborate
@@ -18,7 +19,7 @@ function HomeCard() {
           </p>
         </div>
         <Link to="/projects">
-          <a href="" className="neon-button">
+          <a href="" className={styles.neon_button}>
             Projects
           </a>
         </Link>
