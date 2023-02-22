@@ -4,7 +4,7 @@ import styles from '../styles/HomeCard.module.css'
 
 function HomeCard() {
   return (
-    <div className="home-card-container">
+    <div>
       <div className={styles.title}>
         <div className={styles.title_caption}>
           <h1 className={styles.caption}>
