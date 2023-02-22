@@ -1,13 +1,13 @@
 .footer {
   color: RGB(4, 255, 247);
   text-decoration: none;
-  /* height: 50px; */
 }
 
 .footer_items {
   background-color: #1d212e;
   display: flex;
   flex-direction: column;
+  flex-shrink: 1;
 }
 
 .footer_link {
@@ -42,4 +42,11 @@
 
 a {
   color: RGB(4, 255, 247);
+}
+
+@media screen  and (max-width: 1020px){
+  .footer_link {
+  font-size: x-small;
+}
+
 }
