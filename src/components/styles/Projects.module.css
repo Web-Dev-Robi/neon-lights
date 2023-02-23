@@ -1,47 +1,112 @@
 .container {
   height: 80%;
   width: 75%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 25px auto;
   border: solid 2px green;
+  background-color: black;
+  border-radius: 15px;
 }
 
 .flex_container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 25px;
+}
+
+img {
+  border-radius: 15px;
 }
 
 .image {
   margin-left: auto;
   margin-right: auto;
+  align-self: center;
 }
 
 .title {
   text-align: center;
+  color: white;
+  text-decoration: none;
 }
 
 .project_info {
   text-align: left;
+  color: white;
   padding: 25px;
 }
 
 .pagination {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .pagination a {
-  color: black;
   padding: 8px 16px;
   text-decoration: none;
   transition: background-color 0.3s;
   border: 1px solid #ddd;
+  color: white;
 }
 
 .project_nav {
   align-self: self-end;
   padding: 10px;
+  color: white;
 }
 
-.pagination a:hover:not(.active) {background-color: #ddd;}
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+@media screen and (max-width: 990px) {
+  .container {
+    width: 325px;
+    height: fit-content;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .image_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title {
+    text-align: center;
+    color: white;
+    font-size: small;
+    text-decoration: none;
+  }
+
+  .project_info {
+    text-align: left;
+    color: white;
+    font-size: xx-small;
+    padding: 12.5px;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+  }
+
+  .pagination a {
+    padding: 4px 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border: 1px solid #ddd;
+    color: white;
+  }
+
+  .project_nav {
+    align-self: self-end;
+    padding: 5px;
+    font-size: xx-small;
+    color: white;
+  }
+}

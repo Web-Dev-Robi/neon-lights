@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Libre+Barcode+39&family=Monofett&family=Monoton&family=Permanent+Marker&family=Press+Start+2P&family=Rubik+Vinyl&family=Tourney:ital,wght@0,400;1,100;1,400;1,700&display=swap");
 
-:root {
-  --clr-neon: hsl(317 100% 54%);
-  --clr-bg: hsl(323 21% 16%);
-  --clr-neon-blue: hsl(232, 94%, 50%);
-}
 
 html,
 body {
