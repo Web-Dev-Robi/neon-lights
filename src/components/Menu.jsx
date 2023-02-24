@@ -22,7 +22,7 @@ function Menu() {
           </button>
         </Link>
         <button>
-          <a href="https://github.com/desiredstate2021">
+          <a href="https://github.com/Web-Dev-Robi">
             <AiFillGithub className="icon" />
           </a>
         </button>
@@ -36,7 +36,7 @@ function Menu() {
             <AiFillLinkedin className="icon" />
           </a>
         </button>
-        <Link to='/cv'>
+        <Link to="/cv">
           <button>
             <AiFillProfile className="icon" />
           </button>
