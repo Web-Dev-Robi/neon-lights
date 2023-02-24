@@ -10,11 +10,12 @@ import Inspiration from './components/pages/Inspiration';
 import Hobbies from './components/pages/Hobbies';
 import PhotoAlbum from './components/pages/PhotoAlbum';
 import Contact from './components/pages/Contact';
+import Cv from './components/pages/Cv';
 
 
 
 function App() {
-  
+
   return (
     <Router>
       <div className="App">
@@ -24,10 +25,11 @@ function App() {
             <Route path='/' element={<HomeCard />} />
             <Route path='/aboutme' element={<AboutMe />} />
             <Route path='/projects' element={<Projects />} />
-            <Route path='/hobbies' element={<Hobbies/>} />
-            <Route path='/inspiration' element={<Inspiration/>} />
-            <Route path='/photoalbum' element={<PhotoAlbum/>} />
-            <Route path='/contact' element={<Contact/>} />
+            <Route path='/hobbies' element={<Hobbies />} />
+            <Route path='/inspiration' element={<Inspiration />} />
+            <Route path='/photoalbum' element={<PhotoAlbum />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/cv' element={<Cv />} />
           </Routes>
         </main>
         <Footer />

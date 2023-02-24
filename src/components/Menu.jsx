@@ -16,9 +16,11 @@ function Menu() {
   return (
     <div className="sidebar-nav">
       <div className="clicked">
-        <button>
-          <AiFillHome className="icon" />
-        </button>
+        <Link to="/">
+          <button>
+            <AiFillHome className="icon" />
+          </button>
+        </Link>
         <button>
           <a href="https://github.com/desiredstate2021">
             <AiFillGithub className="icon" />
@@ -34,9 +36,11 @@ function Menu() {
             <AiFillLinkedin className="icon" />
           </a>
         </button>
-        <button>
-          <AiFillProfile className="icon" />
-        </button>
+        <Link to='/cv'>
+          <button>
+            <AiFillProfile className="icon" />
+          </button>
+        </Link>
         <Link to="aboutme">
           <button>
             <SiAboutdotme className="icon" />
