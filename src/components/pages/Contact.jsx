@@ -124,7 +124,7 @@ function Contact() {
               </p>
             </div>
             <div className={styles.submit}>
-              <button className="" type="submit">
+              <button className={styles.btn} type="submit">
                 SUBMIT
               </button>
             </div>

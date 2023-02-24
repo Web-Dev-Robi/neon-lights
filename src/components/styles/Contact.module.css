@@ -1,5 +1,12 @@
+:root {
+  --clr-neon: hsl(317 100% 54%);
+  --clr-bg: hsl(323 21% 16%);
+  --clr-neon-blue: hsl(232, 94%, 50%);
+}
+
+
 .container {
-  height: 400px;
+  height: fit-content;
   width: 850px;
   margin: 40px auto;
   border: solid 3px green;
@@ -55,6 +62,10 @@
   margin-top: 15px;
 }
 
+button {
+  background-color: black;
+}
+
 textarea {
   resize: none;
   height: 200px;
@@ -70,4 +81,99 @@ textarea {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.btn {
+  font-family: monospace;
+  position: relative;
+  display: inline-block;
+  align-self: center;
+  cursor: pointer;
+  color: var(--clr-neon);
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  width: 125px;
+  border: var(--clr-neon) 0.125em solid;
+  border-radius: 0.25em;
+  padding: 0.25em 1em;
+  text-shadow: 0 0 0.125em var(--clr-neon), 0 0 0.45em var(--clr-neon);
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+}
+
+.btn::before {
+  pointer-events: none;
+  overflow: hidden;
+  content: "";
+  background-color: var(--clr-neon);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.25);
+  filter: blur(1.5em);
+  opacity: 0.9;
+  transition: background-color 100ms linear;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--clr-neon);
+  color: var(--clr-bg);
+  text-shadow: none;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em var(--clr-neon);
+  opacity: 0;
+  transition: opacity 100ms linear;
+}
+
+.btn:hover::before,
+.btn:focus::before,
+.btn:hover::after,
+.btn:focus::after {
+  opacity: 1;
+}  
+
+
+@media screen and (max-width: 700px){
+  .container {
+  height: fit-content;
+  width: 350px;
+  margin: 40px auto;
+  border: solid 3px green;
+  padding: 25px;
+  background-color: black;
+  border-radius: 15px;
+}
+  .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: x-small;
+}
+
+label {
+  font-size: x-small;
+}
+
+.btn {
+   font-size: 0.75rem;
+  text-decoration: none;
+  width: 65px;
+  height: auto;
+}
 }
