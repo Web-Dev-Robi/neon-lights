@@ -43,6 +43,7 @@
 }
 
 .neon_button {
+  margin-top: 15px;
   font-family: monospace;
   position: relative;
   display: inline-block;

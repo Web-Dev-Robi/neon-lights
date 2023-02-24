@@ -1,13 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Libre+Barcode+39&family=Monofett&family=Monoton&family=Permanent+Marker&family=Press+Start+2P&family=Rubik+Vinyl&family=Tourney:ital,wght@0,400;1,100;1,400;1,700&display=swap");
 
-
 html,
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
-  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background-color: black;
   overflow-x: hidden;
 }
 
@@ -16,27 +14,26 @@ body {
   flex-direction: column;
   max-width: 1440px;
   margin: auto;
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
 }
 
 p {
-     margin: 0px;
+  margin: 0px;
 }
-
-
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
- margin: 25px auto;
+  margin: 25px auto;
   min-height: 100vh;
 }
 
-
-.grid-container {
+/* .grid-container {
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(5 (auto));
   grid-template-rows: repeat(12 (auto));
   height: 100%;
-}
+} */

@@ -1,10 +1,13 @@
 import React from "react";
 import cv from "../assets/cv.png";
+import styles from "../styles/Cv.module.css";
 
 function Cv() {
   return (
     <div>
-      <img src={cv} alt="Brian Cordisco CV/Resume" />
+      <div className={styles.image_container}>
+        <img src={cv} alt="Brian Cordisco CV/Resume" />
+      </div>
     </div>
   );
 }

@@ -19,7 +19,7 @@ function WideNav() {
             GitHub
           </a>
           <a
-            href="https://twitter.com/CordiscoBrian"
+            href="https://twitter.com/BrianCordisco"
             className={styles.twitter}
           >
             Twitter

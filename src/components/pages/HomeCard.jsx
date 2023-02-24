@@ -18,11 +18,9 @@ function HomeCard() {
             they are impressive."
           </p>
         </div>
-        <Link to="/projects">
-          <a href="" className={styles.neon_button}>
-            Projects
-          </a>
-        </Link>
+        <Link to="/projects" className={styles.neon_button}>
+          Projects
+         </Link>
       </div>
     </div>
   );
