@@ -1,4 +1,4 @@
-import styles from "../styles/Contact.module.css"
+import styles from "../styles/Contact.module.css";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 
@@ -33,7 +33,7 @@ function Contact() {
             <div className={styles.form_info}>
               <div className={styles.name}>
                 <label
-                  className={`${
+                  className={`${styles.name_label}${
                     formik.touched.name && formik.errors.name
                       ? "text-error"
                       : ""
@@ -56,7 +56,7 @@ function Contact() {
               </div>
               <div className={styles.email}>
                 <label
-                  className={`${
+                  className={`${styles.email_label}${
                     formik.touched.email && formik.errors.email
                       ? " text-error"
                       : ""
@@ -85,7 +85,7 @@ function Contact() {
             <div>
               <div className={styles.message}>
                 <label
-                  className={`${
+                  className={`${styles.message_label}${
                     formik.touched.message && formik.errors.message
                       ? " text-error"
                       : ""
@@ -105,7 +105,7 @@ function Contact() {
                 />
               </div>
             </div>
-            <div className="">
+            <div className={styles.terms_title}>
               <p>Terms of Service</p>
             </div>
             <div className={styles.terms}>
