@@ -1,6 +1,7 @@
 import React from "react";
 import inquizable from "../assets/inquizable.png";
 import styles from "../styles/Projects.module.css";
+import { Link } from "react-router-dom";
 
 function Projects() {
   return (
@@ -8,7 +9,11 @@ function Projects() {
       <div className={styles.container}>
         <div className={styles.flex_container}>
           <div className={styles.image}>
-            <img className={styles.image_image} src={inquizable} alt="inquizable.com website" />
+            <img
+              className={styles.image_image}
+              src={inquizable}
+              alt="inquizable.com website"
+            />
           </div>
           <div className={styles.title}>
             <h2>
@@ -31,8 +36,8 @@ function Projects() {
           <div className={styles.project_nav}>
             <p>Next Project:</p>
             <div className={styles.pagination}>
-              <a href="#">❮</a>
-              <a href="#">❯</a>
+              <Link>❮</Link>
+              <Link to="/texttoimage">❯</Link>
             </div>
           </div>
         </div>

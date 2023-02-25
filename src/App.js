@@ -11,6 +11,8 @@ import Hobbies from './components/pages/Hobbies';
 import PhotoAlbum from './components/pages/PhotoAlbum';
 import Contact from './components/pages/Contact';
 import Cv from './components/pages/Cv';
+import TextToImage from './components/pages/TextToImage';
+import GitHub from './components/pages/GitHub';
 
 
 
@@ -30,6 +32,8 @@ function App() {
             <Route path='/photoalbum' element={<PhotoAlbum />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='/cv' element={<Cv />} />
+            <Route path='/texttoimage' element={<TextToImage />}/>
+            <Route path='/github' element={<GitHub />}/>
           </Routes>
         </main>
         <Footer />
