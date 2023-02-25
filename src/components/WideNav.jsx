@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { SiCircle } from "react-icons/si";
-import styles from "../components/styles/WideNav.module.css"
-
+import styles from "../components/styles/WideNav.module.css";
 
 function WideNav() {
   return (
@@ -15,13 +14,10 @@ function WideNav() {
           <Link to="/">Brian Cordisco</Link>
         </div>
         <div className={styles.nav_right}>
-          <a href="https://github.com/desiredstate2021" className={styles.git}>
+          <a href="https://github.com/Web-Dev-Robi" className={styles.git}>
             GitHub
           </a>
-          <a
-            href="https://twitter.com/BrianCordisco"
-            className={styles.twitter}
-          >
+          <a href="https://twitter.com/Web_Dev_Robi" className={styles.twitter}>
             Twitter
           </a>
           <a

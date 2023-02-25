@@ -27,7 +27,7 @@ function Menu() {
           </a>
         </button>
         <button>
-          <a href="https://twitter.com/CordiscoBrian">
+          <a href="https://twitter.com/Web_Dev_Robi">
             <AiFillTwitterCircle className="icon" />
           </a>
         </button>
