@@ -13,6 +13,7 @@ function Projects() {
               className={styles.image_image}
               src={inquizable}
               alt="inquizable.com website"
+              loading="lazy"
             />
           </div>
           <div className={styles.title}>
@@ -36,7 +37,7 @@ function Projects() {
           <div className={styles.project_nav}>
             <p>Next Project:</p>
             <div className={styles.pagination}>
-              <Link>❮</Link>
+              <Link to="/">❮</Link>
               <Link to="/texttoimage">❯</Link>
             </div>
           </div>

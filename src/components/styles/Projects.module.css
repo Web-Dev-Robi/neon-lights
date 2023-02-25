@@ -25,14 +25,20 @@ img {
   align-self: center;
 }
 
+.title a {
+  color: RGB(4, 255, 247);
+  text-decoration: none;
+  font-size: 1.2rem;
+  word-spacing: -4px;
+}
+
 .title {
   text-align: center;
-  color: white;
-  text-decoration: none;
 }
 
 .project_info {
-  text-align: left;
+  text-align: center;
+  word-spacing: -3px;
   color: white;
   padding: 25px;
 }

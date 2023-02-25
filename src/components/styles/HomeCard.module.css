@@ -16,7 +16,7 @@
   border-radius: 10px;
   border: solid 3px black;
   width: 350px;
-  height: 360px;
+  height: fit-content;
 }
 
 
@@ -102,4 +102,17 @@
 .neon_button:hover::after,
 .neon_button:focus::after {
   opacity: 1;
+}
+
+@media screen and (max-width: 700px){
+ 
+.neon_button {
+  font-size: 0.75rem;
+  text-decoration: none;
+  width: 65px;
+  height: auto;
+}
+.caption {
+  font-size: 20px;
+}
 }

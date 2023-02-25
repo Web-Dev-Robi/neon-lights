@@ -20,6 +20,7 @@ body {
 
 p {
   margin: 0px;
+  line-height: 1.4;
 }
 
 .container {
@@ -30,10 +31,3 @@ p {
   min-height: 100vh;
 }
 
-/* .grid-container {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(5 (auto));
-  grid-template-rows: repeat(12 (auto));
-  height: 100%;
-} */

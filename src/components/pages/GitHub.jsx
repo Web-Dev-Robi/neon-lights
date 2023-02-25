@@ -12,7 +12,8 @@ function GitHub() {
               <img
                 className={styles.image_image}
                 src={git}
-                alt="https://git-hub-finder-vite.vercel.app/ website"
+                alt="GitHub Finder website"
+                loading="lazy"
               />
             </div>
             <div className={styles.title}>
@@ -33,9 +34,9 @@ function GitHub() {
                 and forks.
               </p>
               <p>
-                The website provides a simple and convenient way to
-                quickly search for GitHub users and view their public
-                repositories. Built in Vite.
+                The website provides a simple and convenient way to quickly
+                search for GitHub users and view their public repositories.
+                Built in Vite.
               </p>
             </div>
             <div className={styles.project_nav}>

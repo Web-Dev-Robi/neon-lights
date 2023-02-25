@@ -12,7 +12,8 @@ function TextToImage() {
               <img
                 className={styles.image_image}
                 src={text}
-                alt="inquizable.com website"
+                alt="text to image website"
+                loading=" lazy"
               />
             </div>
             <div className={styles.title}>
@@ -38,7 +39,7 @@ function TextToImage() {
               <p>Next Project:</p>
               <div className={styles.pagination}>
                 <Link to="/projects">❮</Link>
-                <Link to='/github'>❯</Link>
+                <Link to="/github">❯</Link>
               </div>
             </div>
           </div>
