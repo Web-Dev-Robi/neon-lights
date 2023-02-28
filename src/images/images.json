@@ -1,0 +1,22 @@
+{
+	"images": [
+		{
+			"id": 1,
+			"image": "bridge.jpg",
+			"title": "Bridge",
+			"interval": 1500
+		},
+		{
+			"id": 2,
+			"image": "https://theforage.wpengine.com/wp-content/uploads/2022/09/tech-companies-1024x683.jpg",
+			"title": "Sun",
+			"interval": 1500
+		},
+		{
+			"id": 3,
+			"image": "https://www.springboard.com/blog/wp-content/uploads/2022/08/programming-skills-800x496.png",
+			"title": "Clouds",
+			"interval": 1500
+		}
+	]
+}
