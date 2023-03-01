@@ -1,4 +1,4 @@
-import { Slider } from "../../images/slider.js";
+import  Slider  from "../../images/Slider";
 import images from "../../images/images.json";
 
 function PhotoAlbum() {
