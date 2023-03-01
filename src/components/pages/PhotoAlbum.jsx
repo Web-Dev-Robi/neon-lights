@@ -1,10 +1,15 @@
 import  Slider  from "../../images/Slider";
 import images from "../../images/images.json";
+import { Swiper } from "swiper/react";
+import styles from '../styles/PhotoAlbum.module.css'
 
-function PhotoAlbum() {
+export default function PhotoAlbum() {
 	return (
-		<Slider images={images.images} />
+		<Swiper>
+			<div className={styles.container}>
+				<Slider images={images.images} />
+			</div>
+		</Swiper>
 	);
 }
 
-export default PhotoAlbum;

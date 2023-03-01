@@ -1,0 +1,15 @@
+.swiper_container {
+	border: solid 3px black;
+}
+
+.carousel {
+	height: 400px;
+	width: fit-content;
+    /* object-fit: cover; */
+}
+
+.swiper_slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
