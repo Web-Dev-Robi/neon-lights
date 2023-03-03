@@ -9,7 +9,10 @@ export default function PhotoAlbum() {
 			<div className={styles.container}>
 				<h2 className={styles.heading}>Photo Album</h2>
 				<Slider images={images.images} />
-				<p>Every now and again I get a feeling to take a photo and these are the results</p>
+				<p>
+					Every now and again I get a feeling to take a photo and
+					these are the results
+				</p>
 			</div>
 		</Swiper>
 	);
