@@ -3,7 +3,7 @@ import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import "swiper/css/effect-fade";
-import styles from "../components/styles/Slider.module.css";
+import styles from "../styles/Slider.module.css";
 
 export default function Slider({ images }) {
 	return (
