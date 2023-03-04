@@ -2,7 +2,7 @@ import styles from "../styles/Projects.module.css";
 import { Link } from "react-router-dom";
 
 function GitHub() {
-  return (
+	return (
 		<div>
 			<div>
 				<div className={styles.container}>
@@ -16,11 +16,9 @@ function GitHub() {
 							/>
 						</div>
 						<div className={styles.title}>
-							<h2>
-								<a href="https://git-hub-finder-vite.vercel.app/">
-									GitHub Finder
-								</a>
-							</h2>
+							<a href="https://git-hub-finder-vite.vercel.app/">
+								GitHub Finder
+							</a>
 						</div>
 						<div className={styles.project_info}>
 							<p>
@@ -51,7 +49,7 @@ function GitHub() {
 				</div>
 			</div>
 		</div>
-  );
+	);
 }
 
-export default GitHub
+export default GitHub;

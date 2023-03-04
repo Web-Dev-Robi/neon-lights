@@ -16,11 +16,9 @@ function AmazingSpace() {
 							/>
 						</div>
 						<div className={styles.title}>
-							<h2>
-								<a href="https://amazing-spacetime.netlify.app">
-									Amazing Space
-								</a>
-							</h2>
+							<a href="https://amazing-spacetime.netlify.app">
+								Amazing Space
+							</a>
 						</div>
 						<div className={styles.project_info}>
 							<p>

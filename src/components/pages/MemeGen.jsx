@@ -16,17 +16,16 @@ function MemeGen() {
 							/>
 						</div>
 						<div className={styles.title}>
-							<h2>
-								<a href="https://memefunv2.netlify.app">
-									Meme Generator
-								</a>
-							</h2>
+							<a href="https://memefunv2.netlify.app">
+								Meme Generator
+							</a>
 						</div>
 						<div className={styles.project_info}>
 							<p>
-								A little web app where you can make and save custom memes.
-								Just enter text in the 3 inputs and save it to
-								desktop, mobile, or tablet. Created in React.
+								A little web app where you can make and save
+								custom memes. Just enter text in the 3 inputs
+								and save it to desktop, mobile, or tablet.
+								Created in React.
 							</p>
 						</div>
 						<div className={styles.project_nav}>

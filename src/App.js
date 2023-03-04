@@ -1,8 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import './components/mobile/responsive.css';
-import ResponsiveNav from './components/ResponsiveNav';
-import Footer from './components/Footer';
+import ResponsiveNav from './components/pages/ResponsiveNav';
+import Footer from './components/pages/Footer';
 import AboutMe from './components/pages/AboutMe';
 import HomeCard from './components/pages/HomeCard';
 import Projects from './components/pages/Projects';

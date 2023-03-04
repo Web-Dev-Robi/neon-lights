@@ -2,7 +2,7 @@ import styles from "../styles/Projects.module.css";
 import { Link } from "react-router-dom";
 
 function Projects() {
-  return (
+	return (
 		<div>
 			<div className={styles.container}>
 				<div className={styles.flex_container}>
@@ -15,9 +15,7 @@ function Projects() {
 						/>
 					</div>
 					<div className={styles.title}>
-						<h2>
-							<a href="https://www.inquizable.com/">Inquizable</a>
-						</h2>
+						<a href="https://www.inquizable.com/">Inquizable</a>
 					</div>
 					<div className={styles.project_info}>
 						<p>
@@ -44,7 +42,7 @@ function Projects() {
 				</div>
 			</div>
 		</div>
-  );
+	);
 }
 
 export default Projects;

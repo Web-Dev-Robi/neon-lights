@@ -16,11 +16,9 @@ function Green() {
 							/>
 						</div>
 						<div className={styles.title}>
-							<h2>
-								<a href="https://gulsah-bayar.vercel.app">
-									Gülşah Bayar
-								</a>
-							</h2>
+							<a href="https://gulsah-bayar.vercel.app">
+								Gülşah Bayar
+							</a>
 						</div>
 						<div className={styles.project_info}>
 							<p>

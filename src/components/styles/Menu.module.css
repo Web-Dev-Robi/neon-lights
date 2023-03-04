@@ -1,5 +1,5 @@
 @media screen and (max-width: 900px) {
-  .sidebar-nav {
+  .sidebar_nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -12,6 +12,7 @@
     align-content: center;
     height: 10vh;
     width: auto;
+    z-index: 2;
   }
 
   .clicked {
@@ -66,7 +67,7 @@
     border-radius: 9999px;
   }
 
-  .neon-button {
+  /* .neon-button {
     font-family: monospace;
     position: relative;
     display: inline-block;
@@ -82,10 +83,10 @@
     padding: 0.25em 1em;
     text-shadow: 0 0 0.125em var(--clr-neon), 0 0 0.45em var(--clr-neon);
     box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
-  }
+  } */
 
 
-  .about-me-container {
+  /* .about-me-container {
     border: solid 2px #39ff14;
     display: grid;
     align-items: center;
@@ -101,16 +102,16 @@
     margin: auto;
     justify-content: center;
     align-items: center;
-  }
+  } */
 }
 
 @media screen and (min-width: 900px) {
-  .sidebar-nav {
+  .sidebar_nav {
     visibility: hidden;
     position: absolute;
   }
 
-  .nav-container {
+  .nav_container {
     visibility: visible;
     position: relative;
     display: flex;

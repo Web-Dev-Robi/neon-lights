@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { SiCircle } from "react-icons/si";
-import styles from "../components/styles/WideNav.module.css";
+import styles from "../styles/WideNav.module.css";
 
 function WideNav() {
   return (
