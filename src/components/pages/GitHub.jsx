@@ -43,7 +43,7 @@ function GitHub() {
               <p>Next Project:</p>
               <div className={styles.pagination}>
                 <Link to="/texttoimage">❮</Link>
-                <Link>❯</Link>
+                <Link to="/green">❯</Link>
               </div>
             </div>
           </div>

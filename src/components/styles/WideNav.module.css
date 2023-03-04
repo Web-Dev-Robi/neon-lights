@@ -44,7 +44,8 @@
 
 .git,
 .twitter,
-.linkedin {
+.linkedin,
+.cv {
 	font-family: "Monofett", cursive;
 	font-size: xx-large;
 	color: RGB(4, 255, 247);

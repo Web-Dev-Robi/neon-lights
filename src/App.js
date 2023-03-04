@@ -13,6 +13,7 @@ import Contact from './components/pages/Contact';
 import Cv from './components/pages/Cv';
 import TextToImage from './components/pages/TextToImage';
 import GitHub from './components/pages/GitHub';
+import Green from './components/pages/Green';
 
 
 
@@ -34,6 +35,7 @@ function App() {
             <Route path='/cv' element={<Cv />} />
             <Route path='/texttoimage' element={<TextToImage />}/>
             <Route path='/github' element={<GitHub />}/>
+            <Route path='/green' element={<Green />}/>
           </Routes>
         </main>
         <Footer />
