@@ -1,119 +1,122 @@
 .container {
-  height: 80%;
-  width: 75%;
-  margin: 25px auto;
-  border: solid 2px green;
-  background-color: black;
-  border-radius: 15px;
+	height: 80%;
+	width: 75%;
+	margin: 25px auto;
+	border: solid 2px green;
+	background-color: black;
+	border-radius: 15px;
 }
 
 .flex_container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 25px;
 }
 
 img {
-  border-radius: 15px;
-  width: 100%;
-  object-fit: contain;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+.image_image {
 }
 
 .image {
-  margin-left: auto;
-  margin-right: auto;
-  align-self: center;
-  border: solid 3px green;
+	margin-left: auto;
+	margin-right: auto;
+	align-self: center;
+	border: solid 3px green;
 }
 
 .title a {
-  color: RGB(4, 255, 247);
-  text-decoration: none;
-  font-size: 1.2rem;
+	color: RGB(4, 255, 247);
+	text-decoration: none;
+	font-size: 1.2rem;
 }
 
 .title {
-  text-align: center;
+	text-align: center;
 }
 
 .project_info {
-  text-align: center;
-  color: white;
-  padding: 25px;
+	text-align: center;
+	color: white;
+	padding: 25px;
 }
 
 .pagination {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .pagination a {
-  padding: 8px 16px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-  border: 1px solid #ddd;
-  color: white;
+	padding: 8px 16px;
+	text-decoration: none;
+	transition: background-color 0.3s;
+	border: 1px solid #ddd;
+	color: white;
 }
 
 .project_nav {
-  align-self: self-end;
-  padding: 10px;
-  color: white;
+	align-self: self-end;
+	padding: 10px;
+	color: white;
 }
 
 .pagination a:hover:not(.active) {
-  background-color: #ddd;
+	background-color: #ddd;
 }
 
 @media screen and (max-width: 990px) {
-  .container {
-    width: 325px;
-    height: fit-content;
-  }
+	.container {
+		width: 325px;
+		height: fit-content;
+	}
 
-  img {
-    width: 100%;
-  }
+	img {
+		width: 100%;
+	}
 
-  .image_image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+	.image_image {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
-  .title {
-    text-align: center;
-    color: white;
-    font-size: small;
-    text-decoration: none;
-  }
+	.title {
+		text-align: center;
+		color: white;
+		font-size: small;
+		text-decoration: none;
+	}
 
-  .project_info {
-    text-align: left;
-    color: white;
-    font-size: xx-small;
-    padding: 12.5px;
-  }
+	.project_info {
+		text-align: left;
+		color: white;
+		font-size: xx-small;
+		padding: 12.5px;
+	}
 
-  .pagination {
-    display: flex;
-    justify-content: center;
-  }
+	.pagination {
+		display: flex;
+		justify-content: center;
+	}
 
-  .pagination a {
-    padding: 4px 8px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-    border: 1px solid #ddd;
-    color: white;
-  }
+	.pagination a {
+		padding: 4px 8px;
+		text-decoration: none;
+		transition: background-color 0.3s;
+		border: 1px solid #ddd;
+		color: white;
+	}
 
-  .project_nav {
-    align-self: self-end;
-    padding: 5px;
-    font-size: xx-small;
-    color: white;
-  }
+	.project_nav {
+		align-self: self-end;
+		padding: 5px;
+		font-size: xx-small;
+		color: white;
+	}
 }

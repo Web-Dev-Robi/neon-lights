@@ -1,4 +1,3 @@
-import text from "../assets/texttoimageai.png";
 import styles from "../styles/Projects.module.css";
 import { Link } from "react-router-dom";
 
@@ -11,9 +10,9 @@ function TextToImage() {
 						<div className={styles.image}>
 							<img
 								className={styles.image_image}
-								src={text}
+								src="https://i.ibb.co/3pdM53H/texttoimage.png"
 								alt="text to jpg website"
-								loading=" lazy"
+								loading="lazy"
 							/>
 						</div>
 						<div className={styles.title}>
