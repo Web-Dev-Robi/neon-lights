@@ -10,7 +10,7 @@
   width: 850px;
   margin: 40px auto;
   border: solid 3px green;
-  padding: 25px;
+  padding: 30px;
   background-color: black;
   border-radius: 15px;
 }
@@ -18,8 +18,8 @@
 .form {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 20px auto;
+  align-content: center;
+  margin: auto;
   color: white;
 }
 
@@ -31,14 +31,22 @@
 .terms {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+}
+
+p {
+  margin: 3px;
+  text-align: center;
 }
 
 .name {
   display: flex;
   flex-direction: column;
   width: 50%;
+}
+
+input {
+  padding: 0;
 }
 
 .email {
@@ -71,11 +79,6 @@ textarea {
   height: 200px;
 }
 
-.email_label,
-.name_label,
-.message_label {
-  margin-bottom: 5px;
-}
 
 .terms_title {
   text-align: center;
@@ -148,10 +151,9 @@ textarea {
 @media screen and (max-width: 700px){
   .container {
   height: fit-content;
-  width: 350px;
+  width: 80%;
   margin: 40px auto;
   border: solid 3px green;
-  padding: 25px;
   background-color: black;
   border-radius: 15px;
 }
@@ -163,7 +165,7 @@ textarea {
 }
 
 p {
-  font-size: x-small;
+  font-size: xx-small;
 }
 
 label {
