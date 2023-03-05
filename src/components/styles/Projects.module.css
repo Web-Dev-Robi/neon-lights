@@ -1,6 +1,6 @@
 .container {
 	height: 80%;
-	width: 75%;
+	width: 80%;
 	margin: 25px auto;
 	border: solid 2px green;
 	background-color: black;
@@ -15,7 +15,7 @@
 	padding: 25px;
 }
 
-img {
+.image_image {
 	width: 100%;
 	height: auto;
 	object-fit: cover;
@@ -36,13 +36,13 @@ img {
 
 .title {
 	text-align: center;
-	margin: 25px;
+	margin: 15px;
 }
 
 .project_info {
 	text-align: center;
 	color: white;
-	padding: 25px;
+	padding:  0 25px;
 }
 
 .pagination {
@@ -69,20 +69,6 @@ img {
 }
 
 @media screen and (max-width: 990px) {
-	.container {
-		width: 325px;
-		height: fit-content;
-	}
-
-	img {
-		width: 100%;
-	}
-
-	.image_image {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
 
 	.title a {
 		color: RGB(4, 255, 247);

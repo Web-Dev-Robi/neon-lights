@@ -1,9 +1,6 @@
 .container {
 	background-color: black;
 	border-radius: 15px;
-	display: block;
-	justify-content: center;
-	align-items: center;
 	height: fit-content;
 	border: solid 3px green;
 	width: 85%;
@@ -23,7 +20,6 @@
 p {
     color: white;
     text-align: center;
-    margin: 20px;
 }
 
 

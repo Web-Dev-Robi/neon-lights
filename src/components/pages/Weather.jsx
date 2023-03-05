@@ -23,7 +23,7 @@ function Weather() {
 						<div className={styles.project_info}>
 							<p>
 								Duel Weather App that displays local weather and
-								the ability to find weather on any place on
+								the ability to find weather conditions anywhere on
 								earth. Created in React.
 							</p>
 						</div>
