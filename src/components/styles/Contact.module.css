@@ -138,12 +138,7 @@ textarea {
 
 @media screen and (max-width: 700px) {
 	.container {
-		height: fit-content;
-		width: 80%;
-		margin: 40px auto;
-		border: solid 3px green;
-		background-color: black;
-		border-radius: 15px;
+		width: 300px;
 	}
 	.form {
 		display: flex;
@@ -162,7 +157,6 @@ textarea {
 
 	.btn {
 		font-size: 0.75rem;
-		text-decoration: none;
 		width: 65px;
 		height: auto;
 	}

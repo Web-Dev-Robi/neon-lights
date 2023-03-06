@@ -1,5 +1,7 @@
 import styles from "../styles/Projects.module.css";
 import { Link } from "react-router-dom";
+import texttoimageai from "../assets/webp/texttoimageai.webp";
+import texttoimageaiavif from "../assets/avif/texttoimageai.avif";
 
 function TextToImage() {
 	return (
@@ -7,14 +9,18 @@ function TextToImage() {
 			<div>
 				<div className={styles.container}>
 					<div className={styles.flex_container}>
-						<div className={styles.image}>
+						<picture className={styles.image}>
+							<source
+								srcset={texttoimageaiavif}
+								type="image/avif"
+							/>
 							<img
 								className={styles.image_image}
-								src="https://i.ibb.co/3pdM53H/texttoimage.png"
-								alt="text to jpg website"
+								src={texttoimageai}
+								alt="text to img generator"
 								loading="lazy"
 							/>
-						</div>
+						</picture>
 						<div className={styles.title}>
 							<a href="https://openai-text-to-image-reactv2.vercel.app">
 								OpenAi Text to Image Generator

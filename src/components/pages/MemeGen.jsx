@@ -1,5 +1,7 @@
 import styles from "../styles/Projects.module.css";
 import { Link } from "react-router-dom";
+import meme from "../assets/webp/meme.webp";
+import memeavif from "../assets/avif/meme.avif";
 
 function MemeGen() {
 	return (
@@ -7,14 +9,18 @@ function MemeGen() {
 			<div>
 				<div className={styles.container}>
 					<div className={styles.flex_container}>
-						<div className={styles.image}>
+						<picture className={styles.image}>
+							<source
+								srcset={memeavif}
+								type="image/avif"
+							/>
 							<img
 								className={styles.image_image}
-								src="https://i.ibb.co/TcFcPrb/meme.png"
+								src={meme}
 								alt="meme generator"
 								loading="lazy"
 							/>
-						</div>
+						</picture>
 						<div className={styles.title}>
 							<a href="https://memefunv2.netlify.app">
 								Meme Generator

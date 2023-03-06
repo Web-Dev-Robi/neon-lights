@@ -52,6 +52,10 @@
 }
 
 .home_button {
+	font-family: monospace;
+	display: inline-block;
+	align-self: center;
+	cursor: pointer;
 	color: var(--clr-neon-blue);
 	text-align: center;
 	font-size: 0.75rem;
@@ -64,18 +68,6 @@
 		0 0 0.45em var(--clr-neon-blue);
 	box-shadow: inset 0 0 0.5em 0 var(--clr-neon-blue),
 		0 0 0.5em 0 var(--clr-neon-blue);
-}
-
-.home_button::after {
-	content: "";
-	/* position: relative; */
-	/* top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0; */
-	box-shadow: 0 0 2em 0.5em var(--clr-neon-blue);
-	opacity: 0;
-	transition: opacity 100ms linear;
 }
 
 .about_button {
@@ -111,17 +103,6 @@
 	background-color: var(--clr-neon);
 	color: hsl(323 21% 16%);
 	text-shadow: none;
-}
-
-.home_button:hover::before,
-.home_button:focus::before,
-.home_button:hover::after,
-.home_button:focus::after,
-.about_button:hover::before,
-.about_button:focus::before,
-.about_button:hover::after,
-.about_button:focus::after {
-	opacity: 1;
 }
 
 @media screen and (max-width: 1020px) {

@@ -1,5 +1,7 @@
 import styles from "../styles/Projects.module.css";
 import { Link } from "react-router-dom";
+import greenparty from "../assets/webp/greenparty.webp";
+import greenpartyavif from "../assets/avif/greenparty.avif";
 
 function Green() {
 	return (
@@ -7,14 +9,18 @@ function Green() {
 			<div>
 				<div className={styles.container}>
 					<div className={styles.flex_container}>
-						<div className={styles.image}>
+						<picture className={styles.image}>
+							<source
+								srcset={greenpartyavif}
+								type="image/avif"
+							/>
 							<img
 								className={styles.image_image}
-								src="https://i.ibb.co/Th9wWk2/greenparty.png"
-								alt="Gülşah Bayar Bio"
+								src={greenparty}
+								alt="GUlsah Green Party Member"
 								loading="lazy"
 							/>
-						</div>
+						</picture>
 						<div className={styles.title}>
 							<a href="https://gulsah-bayar.vercel.app">
 								Gülşah Bayar

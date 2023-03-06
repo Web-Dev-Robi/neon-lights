@@ -1,19 +1,25 @@
 import styles from "../styles/Projects.module.css";
 import { Link } from "react-router-dom";
+import inquizable from "../assets/webp/inquizable.webp";
+import inquizableavif from "../assets/avif/inquizable.avif";
 
 function Projects() {
 	return (
 		<div>
 			<div className={styles.container}>
 				<div className={styles.flex_container}>
-					<div className={styles.image}>
-						<img
-							className={styles.image_image}
-							src="https://i.ibb.co/CB0vRks/inquizable.png"
-							alt="inquizable.com website"
-							loading="lazy"
-						/>
-					</div>
+						<picture className={styles.image}>
+							<source
+								srcset={inquizableavif}
+								type="image/avif"
+							/>
+							<img
+								className={styles.image_image}
+								src={inquizable}
+								alt="inquizable.com"
+								loading="lazy"
+							/>
+						</picture>
 					<div className={styles.title}>
 						<a href="https://www.inquizable.com/">Inquizable</a>
 					</div>

@@ -66,43 +66,6 @@
     border-color: black;
     border-radius: 9999px;
   }
-
-  /* .neon-button {
-    font-family: monospace;
-    position: relative;
-    display: inline-block;
-    align-self: center;
-    cursor: pointer;
-    color: var(--clr-neon);
-    text-align: center;
-    font-size: 0.7rem;
-    text-decoration: none;
-    width: 55px;
-    border: var(--clr-neon) 0.125em solid;
-    border-radius: 0.25em;
-    padding: 0.25em 1em;
-    text-shadow: 0 0 0.125em var(--clr-neon), 0 0 0.45em var(--clr-neon);
-    box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
-  } */
-
-
-  /* .about-me-container {
-    border: solid 2px #39ff14;
-    display: grid;
-    align-items: center;
-    grid-template-areas:
-      "image-section-one image-section-one image-section-one"
-      "title text text"
-      "image-section-two image-section-two image-section-two";
-  }
-
-  .about-container {
-    height: fit-content;
-    width: 350px;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-  } */
 }
 
 @media screen and (min-width: 900px) {

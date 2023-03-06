@@ -1,5 +1,7 @@
 import styles from "../styles/Projects.module.css";
 import { Link } from "react-router-dom";
+import gittwo from "../assets/webp/gittwo.webp";
+import gittwoavif from "../assets/avif/gittwo.avif";
 
 function GitHub() {
 	return (
@@ -7,14 +9,18 @@ function GitHub() {
 			<div>
 				<div className={styles.container}>
 					<div className={styles.flex_container}>
-						<div className={styles.image}>
+						<picture className={styles.image}>
+							<source
+								srcset={gittwoavif}
+								type="image/avif"
+							/>
 							<img
 								className={styles.image_image}
-								src="https://i.ibb.co/ByQ76nt/gittwo.png"
-								alt="GitHub Finder website"
+								src={gittwo}
+								alt="GitHub Finder"
 								loading="lazy"
 							/>
-						</div>
+						</picture>
 						<div className={styles.title}>
 							<a href="https://git-hub-finder-vite.vercel.app/">
 								GitHub Finder

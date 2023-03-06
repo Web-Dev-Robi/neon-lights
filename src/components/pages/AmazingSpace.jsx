@@ -1,5 +1,7 @@
 import styles from "../styles/Projects.module.css";
 import { Link } from "react-router-dom";
+import amazing from '../assets/webp/amazingspace.webp'
+import amazingavif from "../assets/avif/amazingspace.avif";
 
 function AmazingSpace() {
 	return (
@@ -7,14 +9,18 @@ function AmazingSpace() {
 			<div>
 				<div className={styles.container}>
 					<div className={styles.flex_container}>
-						<div className={styles.image}>
+						<picture className={styles.image}>
+							<source
+								srcset={amazingavif}
+								type="image/avif"
+							/>
 							<img
 								className={styles.image_image}
-								src="https://i.ibb.co/dgqnjxn/amazing.png"
-								alt="text to jpg website"
+								src={amazing}
+								alt="amazing space travel"
 								loading="lazy"
 							/>
-						</div>
+						</picture>
 						<div className={styles.title}>
 							<a href="https://amazing-spacetime.netlify.app">
 								Amazing Space
