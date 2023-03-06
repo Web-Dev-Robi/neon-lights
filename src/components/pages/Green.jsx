@@ -2,6 +2,7 @@ import styles from "../styles/Projects.module.css";
 import { Link } from "react-router-dom";
 import greenparty from "../assets/webp/greenparty.webp";
 import greenpartyavif from "../assets/avif/greenparty.avif";
+import greenpartysmallavif from "../assets/avif/greenpartysmall.avif";
 
 function Green() {
 	return (
@@ -13,6 +14,10 @@ function Green() {
 							<source
 								srcset={greenpartyavif}
 								type="image/avif"
+							/>
+							<source
+								srcset={greenpartysmallavif}
+								media="(min-width: 40em)"
 							/>
 							<img
 								className={styles.image_image}

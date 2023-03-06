@@ -2,6 +2,7 @@ import styles from "../styles/Projects.module.css";
 import { Link } from "react-router-dom";
 import gittwo from "../assets/webp/gittwo.webp";
 import gittwoavif from "../assets/avif/gittwo.avif";
+import gittwosmallavif from "../assets/avif/gittwosmall.avif";
 
 function GitHub() {
 	return (
@@ -13,6 +14,10 @@ function GitHub() {
 							<source
 								srcset={gittwoavif}
 								type="image/avif"
+							/>
+							<source
+								srcset={gittwosmallavif}
+								media="(min-width: 40em)"
 							/>
 							<img
 								className={styles.image_image}

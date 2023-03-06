@@ -2,6 +2,7 @@ import styles from "../styles/Projects.module.css";
 import { Link } from "react-router-dom";
 import amazing from '../assets/webp/amazingspace.webp'
 import amazingavif from "../assets/avif/amazingspace.avif";
+import amazingsmallavif from "../assets/avif/amazingspacesmall.avif";
 
 function AmazingSpace() {
 	return (
@@ -13,6 +14,10 @@ function AmazingSpace() {
 							<source
 								srcset={amazingavif}
 								type="image/avif"
+							/>
+							<source
+								srcset={amazingsmallavif}
+								media="(min-width: 40em)"
 							/>
 							<img
 								className={styles.image_image}

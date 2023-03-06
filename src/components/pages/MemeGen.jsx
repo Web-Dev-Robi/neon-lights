@@ -2,6 +2,7 @@ import styles from "../styles/Projects.module.css";
 import { Link } from "react-router-dom";
 import meme from "../assets/webp/meme.webp";
 import memeavif from "../assets/avif/meme.avif";
+import memesmallavif from "../assets/avif/memesmall.avif";
 
 function MemeGen() {
 	return (
@@ -13,6 +14,10 @@ function MemeGen() {
 							<source
 								srcset={memeavif}
 								type="image/avif"
+							/>
+							<source
+								srcset={memesmallavif}
+								media="(min-width: 40em)"
 							/>
 							<img
 								className={styles.image_image}

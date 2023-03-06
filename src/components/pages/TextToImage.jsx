@@ -2,6 +2,7 @@ import styles from "../styles/Projects.module.css";
 import { Link } from "react-router-dom";
 import texttoimageai from "../assets/webp/texttoimageai.webp";
 import texttoimageaiavif from "../assets/avif/texttoimageai.avif";
+import texttoimageaismallavif from "../assets/avif/texttoimageaismall.avif";
 
 function TextToImage() {
 	return (
@@ -13,6 +14,10 @@ function TextToImage() {
 							<source
 								srcset={texttoimageaiavif}
 								type="image/avif"
+							/>
+							<source
+								srcset={texttoimageaismallavif}
+								media="(min-width: 40em)"
 							/>
 							<img
 								className={styles.image_image}

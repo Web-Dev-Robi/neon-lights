@@ -2,6 +2,7 @@ import styles from "../styles/Projects.module.css";
 import { Link } from "react-router-dom";
 import weather from "../assets/webp/weather.webp";
 import weatheravif from "../assets/avif/weather.avif";
+import weathersmallavif from "../assets/avif/weathersmall.avif";
 
 function Weather() {
 	return (
@@ -13,6 +14,10 @@ function Weather() {
 							<source
 								srcset={weatheravif}
 								type="image/avif"
+							/>
+							<source
+								srcset={weathersmallavif}
+								media="(min-width: 40em)"
 							/>
 							<img
 								className={styles.image_image}
