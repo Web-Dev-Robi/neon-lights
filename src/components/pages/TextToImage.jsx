@@ -1,5 +1,6 @@
 import styles from "../styles/Projects.module.css";
 import texttoimageaiwebp from "../assets/webp/texttoimageai.webp";
+import texttoimageaismall from "../assets/webp/texttoimageaismall.webp";
 import texttoimageaiavif from "../assets/avif/texttoimageai.avif";
 import texttoimageaismallavif from "../assets/avif/texttoimageaismall.avif";
 
@@ -11,11 +12,12 @@ function TextToImage() {
 					<div className={styles.flex_container}>
 						<picture className={styles.image}>
 							<source
-								srcset={texttoimageaiavif}
-								type="image/avif"
+								srcset={texttoimageaiwebp}
+								type="image/webp"
 							/>
 							<source
-								srcset={texttoimageaiwebp}
+								srcset={texttoimageaismall}
+								media="(min-width: 25em)"
 								type="image/webp"
 							/>
 							<source

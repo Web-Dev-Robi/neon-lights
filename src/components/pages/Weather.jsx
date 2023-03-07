@@ -1,5 +1,6 @@
 import styles from "../styles/Projects.module.css";
 import weatherwebp from "../assets/webp/weather.webp";
+import weathersmall from "../assets/webp/weathersmall.webp";
 import weatheravif from "../assets/avif/weather.avif";
 import weathersmallavif from "../assets/avif/weathersmall.avif";
 
@@ -13,6 +14,11 @@ function Weather() {
 							<source
 								srcset={weatheravif}
 								type="image/avif"
+							/>
+							<source
+								srcset={weathersmall}
+								media="(min-width: 25em)"
+								type="image/webp"
 							/>
 							<source
 								srcset={weatherwebp}

@@ -1,5 +1,6 @@
 import styles from "../styles/Projects.module.css";
 import memewebp from "../assets/webp/meme.webp";
+import memesmall from "../assets/webp/memesmall.webp";
 import memeavif from "../assets/avif/meme.avif";
 import memesmallavif from "../assets/avif/memesmall.avif";
 
@@ -11,11 +12,12 @@ function MemeGen() {
 					<div className={styles.flex_container}>
 						<picture className={styles.image}>
 							<source
-								srcset={memeavif}
-								type="image/avif"
+								srcset={memewebp}
+								type="image/webp"
 							/>
 							<source
-								srcset={memewebp}
+								srcset={memesmall}
+								media="(min-width: 25em)"
 								type="image/webp"
 							/>
 							<source

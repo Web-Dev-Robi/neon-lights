@@ -1,5 +1,6 @@
 import styles from "../styles/Projects.module.css";
 import greenpartywebp from "../assets/webp/greenparty.webp";
+import greenpartysmall from "../assets/webp/greenpartysmall.webp";
 import greenpartyavif from "../assets/avif/greenparty.avif";
 import greenpartysmallavif from "../assets/avif/greenpartysmall.avif";
 
@@ -11,11 +12,12 @@ function Green() {
 					<div className={styles.flex_container}>
 						<picture className={styles.image}>
 							<source
-								srcset={greenpartyavif}
-								type="image/avif"
+								srcset={greenpartywebp}
+								type="image/webp"
 							/>
 							<source
-								srcset={greenpartywebp}
+								srcset={greenpartysmall}
+								media="(min-width: 25em)"
 								type="image/webp"
 							/>
 							<source

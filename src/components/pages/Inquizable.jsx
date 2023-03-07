@@ -1,5 +1,6 @@
 import styles from "../styles/Projects.module.css";
 import inquizablewebp from "../assets/webp/inquizable.webp";
+import inquizablesmall from "../assets/webp/inquizablesmall.webp";
 import inquizableavif from "../assets/avif/inquizable.avif";
 import inquizablesmallavif from "../assets/avif/inquizablesmall.avif";
 
@@ -10,11 +11,12 @@ function Inquizable() {
 				<div className={styles.flex_container}>
 					<picture className={styles.image}>
 						<source
-							srcset={inquizableavif}
-							type="image/avif"
+							srcset={inquizablewebp}
+							type="image/webp"
 						/>
 						<source
-							srcset={inquizablewebp}
+							srcset={inquizablesmall}
+							media="(min-width: 25em)"
 							type="image/webp"
 						/>
 						<source

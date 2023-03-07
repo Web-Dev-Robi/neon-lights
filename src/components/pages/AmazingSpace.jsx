@@ -1,5 +1,6 @@
 import styles from "../styles/Projects.module.css";
 import amazingwebp from '../assets/webp/amazingspace.webp'
+import amazingsmall from '../assets/webp/amazingspacesmall.webp'
 import amazingavif from "../assets/avif/amazingspace.avif";
 import amazingsmallavif from "../assets/avif/amazingspacesmall.avif";
 
@@ -11,11 +12,12 @@ function AmazingSpace() {
 					<div className={styles.flex_container}>
 						<picture className={styles.image}>
 							<source
-								srcset={amazingavif}
-								type="image/avif"
+								srcset={amazingwebp}
+								type="image/webp"
 							/>
 							<source
-								srcset={amazingwebp}
+								srcset={amazingsmall}
+								media="(min-width: 25em)"
 								type="image/webp"
 							/>
 							<source

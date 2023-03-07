@@ -1,7 +1,7 @@
 import React from "react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import styles from '../styles/ProjectsSlider.module.css'
+import styles from "../styles/ProjectsSlider.module.css";
 import "swiper/swiper-bundle.css";
 import Inquizable from "./Inquizable";
 import Green from "./Green";
@@ -26,13 +26,27 @@ function ProjectsSlider() {
 			loop={true}
 			onSlideChange={() => console.log("slide change")}
 			onSwiper={(swiper) => console.log(swiper)}>
-			<SwiperSlide><Inquizable/></SwiperSlide>
-			<SwiperSlide><Green/></SwiperSlide>
-			<SwiperSlide><Weather/></SwiperSlide>
-			<SwiperSlide><TextToImage/></SwiperSlide>
-			<SwiperSlide><MemeGen/></SwiperSlide>
-			<SwiperSlide><GitHub/></SwiperSlide>
-			<SwiperSlide><AmazingSpace/></SwiperSlide>
+			<SwiperSlide>
+				<Inquizable  />
+			</SwiperSlide>
+			<SwiperSlide>
+				<Green />
+			</SwiperSlide>
+			<SwiperSlide>
+				<Weather />
+			</SwiperSlide>
+			<SwiperSlide>
+				<TextToImage />
+			</SwiperSlide>
+			<SwiperSlide>
+				<MemeGen />
+			</SwiperSlide>
+			<SwiperSlide>
+				<GitHub />
+			</SwiperSlide>
+			<SwiperSlide>
+				<AmazingSpace />
+			</SwiperSlide>
 		</Swiper>
 	);
 }

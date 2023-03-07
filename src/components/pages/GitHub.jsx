@@ -1,5 +1,6 @@
 import styles from "../styles/Projects.module.css";
 import gittwowebp from "../assets/webp/gittwo.webp";
+import gittwosmall from "../assets/webp/gittwosmall.webp";
 import gittwoavif from "../assets/avif/gittwo.avif";
 import gittwosmallavif from "../assets/avif/gittwosmall.avif";
 
@@ -11,11 +12,12 @@ function GitHub() {
 					<div className={styles.flex_container}>
 						<picture className={styles.image}>
 							<source
-								srcset={gittwoavif}
-								type="image/avif"
+								srcset={gittwowebp}
+								type="image/webp"
 							/>
 							<source
-								srcset={gittwowebp}
+								srcset={gittwosmall}
+								media="(min-width: 25em)"
 								type="image/webp"
 							/>
 							<source
