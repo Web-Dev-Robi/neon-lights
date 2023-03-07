@@ -1,5 +1,5 @@
 import styles from "../styles/Projects.module.css";
-import amazing from '../assets/webp/amazingspace.webp'
+import amazingwebp from '../assets/webp/amazingspace.webp'
 import amazingavif from "../assets/avif/amazingspace.avif";
 import amazingsmallavif from "../assets/avif/amazingspacesmall.avif";
 
@@ -15,12 +15,17 @@ function AmazingSpace() {
 								type="image/avif"
 							/>
 							<source
+								srcset={amazingwebp}
+								type="image/webp"
+							/>
+							<source
 								srcset={amazingsmallavif}
 								media="(min-width: 25em)"
+								type="image/avif"
 							/>
 							<img
 								className={styles.image_image}
-								src={amazing}
+								src={amazingavif}
 								alt="amazing space travel"
 								loading="lazy"
 							/>

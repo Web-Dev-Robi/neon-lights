@@ -1,5 +1,5 @@
 import styles from "../styles/Projects.module.css";
-import meme from "../assets/webp/meme.webp";
+import memewebp from "../assets/webp/meme.webp";
 import memeavif from "../assets/avif/meme.avif";
 import memesmallavif from "../assets/avif/memesmall.avif";
 
@@ -15,12 +15,17 @@ function MemeGen() {
 								type="image/avif"
 							/>
 							<source
+								srcset={memewebp}
+								type="image/webp"
+							/>
+							<source
 								srcset={memesmallavif}
 								media="(min-width: 25em)"
+								type="image/avif"
 							/>
 							<img
 								className={styles.image_image}
-								src={meme}
+								src={memeavif}
 								alt="meme generator"
 								loading="lazy"
 							/>

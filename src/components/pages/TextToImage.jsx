@@ -1,5 +1,5 @@
 import styles from "../styles/Projects.module.css";
-import texttoimageai from "../assets/webp/texttoimageai.webp";
+import texttoimageaiwebp from "../assets/webp/texttoimageai.webp";
 import texttoimageaiavif from "../assets/avif/texttoimageai.avif";
 import texttoimageaismallavif from "../assets/avif/texttoimageaismall.avif";
 
@@ -15,12 +15,17 @@ function TextToImage() {
 								type="image/avif"
 							/>
 							<source
+								srcset={texttoimageaiwebp}
+								type="image/webp"
+							/>
+							<source
 								srcset={texttoimageaismallavif}
 								media="(min-width: 25em)"
+								type="image/avif"
 							/>
 							<img
 								className={styles.image_image}
-								src={texttoimageai}
+								src={texttoimageaiavif}
 								alt="text to img generator"
 								loading="lazy"
 							/>

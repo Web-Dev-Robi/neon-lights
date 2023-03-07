@@ -1,5 +1,5 @@
 import styles from "../styles/Projects.module.css";
-import greenparty from "../assets/webp/greenparty.webp";
+import greenpartywebp from "../assets/webp/greenparty.webp";
 import greenpartyavif from "../assets/avif/greenparty.avif";
 import greenpartysmallavif from "../assets/avif/greenpartysmall.avif";
 
@@ -15,12 +15,17 @@ function Green() {
 								type="image/avif"
 							/>
 							<source
+								srcset={greenpartywebp}
+								type="image/webp"
+							/>
+							<source
 								srcset={greenpartysmallavif}
 								media="(min-width: 25em)"
+								type="image/avif"
 							/>
 							<img
 								className={styles.image_image}
-								src={greenparty}
+								src={greenpartyavif}
 								alt="GUlsah Green Party Member"
 								loading="lazy"
 							/>

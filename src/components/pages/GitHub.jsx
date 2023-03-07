@@ -1,5 +1,5 @@
 import styles from "../styles/Projects.module.css";
-import gittwo from "../assets/webp/gittwo.webp";
+import gittwowebp from "../assets/webp/gittwo.webp";
 import gittwoavif from "../assets/avif/gittwo.avif";
 import gittwosmallavif from "../assets/avif/gittwosmall.avif";
 
@@ -15,12 +15,17 @@ function GitHub() {
 								type="image/avif"
 							/>
 							<source
+								srcset={gittwowebp}
+								type="image/webp"
+							/>
+							<source
 								srcset={gittwosmallavif}
 								media="(min-width: 25em)"
+								type="image/avif"
 							/>
 							<img
 								className={styles.image_image}
-								src={gittwo}
+								src={gittwoavif}
 								alt="GitHub Finder"
 								loading="lazy"
 							/>

@@ -1,5 +1,5 @@
 import styles from "../styles/Projects.module.css";
-import inquizable from "../assets/webp/inquizable.webp";
+import inquizablewebp from "../assets/webp/inquizable.webp";
 import inquizableavif from "../assets/avif/inquizable.avif";
 import inquizablesmallavif from "../assets/avif/inquizablesmall.avif";
 
@@ -14,12 +14,17 @@ function Inquizable() {
 							type="image/avif"
 						/>
 						<source
+							srcset={inquizablewebp}
+							type="image/webp"
+						/>
+						<source
 							srcset={inquizablesmallavif}
 							media="(min-width: 25em)"
+							type="image/avif"
 						/>
 						<img
 							className={styles.image_image}
-							src={inquizable}
+							src={inquizableavif}
 							alt="inquizable.com"
 							loading="lazy"
 						/>
