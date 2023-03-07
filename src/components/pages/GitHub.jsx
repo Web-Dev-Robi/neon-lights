@@ -16,7 +16,7 @@ function GitHub() {
 							/>
 							<source
 								srcset={gittwosmallavif}
-								media="(min-width: 40em)"
+								media="(min-width: 25em)"
 							/>
 							<img
 								className={styles.image_image}

@@ -16,7 +16,7 @@ function Green() {
 							/>
 							<source
 								srcset={greenpartysmallavif}
-								media="(min-width: 40em)"
+								media="(min-width: 25em)"
 							/>
 							<img
 								className={styles.image_image}

@@ -16,7 +16,7 @@ function AmazingSpace() {
 							/>
 							<source
 								srcset={amazingsmallavif}
-								media="(min-width: 40em)"
+								media="(min-width: 25em)"
 							/>
 							<img
 								className={styles.image_image}

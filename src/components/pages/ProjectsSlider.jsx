@@ -1,6 +1,7 @@
 import React from "react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import styles from '../styles/ProjectsSlider.module.css'
 import "swiper/swiper-bundle.css";
 import Inquizable from "./Inquizable";
 import Green from "./Green";
@@ -13,7 +14,7 @@ import AmazingSpace from "./AmazingSpace";
 function ProjectsSlider() {
 	return (
 		<Swiper
-			// className={styles.swiper_container}
+			className={styles.slider_container}
 			modules={[Navigation, Pagination, Scrollbar, A11y]}
 			spaceBetween={50}
 			grabCursor={true}
