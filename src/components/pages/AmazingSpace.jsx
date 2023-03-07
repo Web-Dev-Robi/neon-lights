@@ -1,5 +1,4 @@
 import styles from "../styles/Projects.module.css";
-import { Link } from "react-router-dom";
 import amazing from '../assets/webp/amazingspace.webp'
 import amazingavif from "../assets/avif/amazingspace.avif";
 import amazingsmallavif from "../assets/avif/amazingspacesmall.avif";
@@ -40,13 +39,6 @@ function AmazingSpace() {
 								embarking weekly, you can book your tickets in
 								advance or on the fly.
 							</p>
-						</div>
-						<div className={styles.project_nav}>
-							<p>Next Project:</p>
-							<div className={styles.pagination}>
-								<Link to="/green">❮</Link>
-								<Link to="/memegen">❯</Link>
-							</div>
 						</div>
 					</div>
 				</div>

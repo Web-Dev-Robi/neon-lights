@@ -1,5 +1,4 @@
 import styles from "../styles/Projects.module.css";
-import { Link } from "react-router-dom";
 import texttoimageai from "../assets/webp/texttoimageai.webp";
 import texttoimageaiavif from "../assets/avif/texttoimageai.avif";
 import texttoimageaismallavif from "../assets/avif/texttoimageaismall.avif";
@@ -46,13 +45,6 @@ function TextToImage() {
 								experience with machine learning or image
 								generation. Site Build in React.
 							</p>
-						</div>
-						<div className={styles.project_nav}>
-							<p>Next Project:</p>
-							<div className={styles.pagination}>
-								<Link to="/projects">❮</Link>
-								<Link to="/github">❯</Link>
-							</div>
 						</div>
 					</div>
 				</div>

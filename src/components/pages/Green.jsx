@@ -1,5 +1,4 @@
 import styles from "../styles/Projects.module.css";
-import { Link } from "react-router-dom";
 import greenparty from "../assets/webp/greenparty.webp";
 import greenpartyavif from "../assets/avif/greenparty.avif";
 import greenpartysmallavif from "../assets/avif/greenpartysmall.avif";
@@ -46,13 +45,6 @@ function Green() {
 								Ipsum nobis dolore pariatur repellendus suscipit
 								odit architecto!
 							</p>
-						</div>
-						<div className={styles.project_nav}>
-							<p>Next Project:</p>
-							<div className={styles.pagination}>
-								<Link to="/github">❮</Link>
-								<Link to="/amazingspace">❯</Link>
-							</div>
 						</div>
 					</div>
 				</div>

@@ -1,5 +1,4 @@
 import styles from "../styles/Projects.module.css";
-import { Link } from "react-router-dom";
 import gittwo from "../assets/webp/gittwo.webp";
 import gittwoavif from "../assets/avif/gittwo.avif";
 import gittwosmallavif from "../assets/avif/gittwosmall.avif";
@@ -48,13 +47,6 @@ function GitHub() {
 								to quickly search for GitHub users and view
 								their public repositories. Built in Vite.
 							</p>
-						</div>
-						<div className={styles.project_nav}>
-							<p>Next Project:</p>
-							<div className={styles.pagination}>
-								<Link to="/texttoimage">❮</Link>
-								<Link to="/green">❯</Link>
-							</div>
 						</div>
 					</div>
 				</div>

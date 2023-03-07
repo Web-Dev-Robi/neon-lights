@@ -1,10 +1,9 @@
 import styles from "../styles/Projects.module.css";
-import { Link } from "react-router-dom";
 import inquizable from "../assets/webp/inquizable.webp";
 import inquizableavif from "../assets/avif/inquizable.avif";
 import inquizablesmallavif from "../assets/avif/inquizablesmall.avif";
 
-function Projects() {
+function Inquizable() {
 	return (
 		<div>
 			<div className={styles.container}>
@@ -43,17 +42,10 @@ function Projects() {
 							mobile devices.
 						</p>
 					</div>
-					<div className={styles.project_nav}>
-						<p>Next Project:</p>
-						<div className={styles.pagination}>
-							<Link to="/">❮</Link>
-							<Link to="/texttoimage">❯</Link>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
 	);
 }
 
-export default Projects;
+export default Inquizable;

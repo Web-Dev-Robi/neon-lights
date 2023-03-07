@@ -1,5 +1,4 @@
 import styles from "../styles/Projects.module.css";
-import { Link } from "react-router-dom";
 import weather from "../assets/webp/weather.webp";
 import weatheravif from "../assets/avif/weather.avif";
 import weathersmallavif from "../assets/avif/weathersmall.avif";
@@ -37,13 +36,6 @@ function Weather() {
 								the ability to find weather conditions anywhere
 								on earth. Created in React.
 							</p>
-						</div>
-						<div className={styles.project_nav}>
-							<p>Next Project:</p>
-							<div className={styles.pagination}>
-								<Link to="/memegen">❮</Link>
-								<Link to="/projects">❯</Link>
-							</div>
 						</div>
 					</div>
 				</div>

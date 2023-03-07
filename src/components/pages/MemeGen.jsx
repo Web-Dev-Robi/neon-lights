@@ -1,5 +1,4 @@
 import styles from "../styles/Projects.module.css";
-import { Link } from "react-router-dom";
 import meme from "../assets/webp/meme.webp";
 import memeavif from "../assets/avif/meme.avif";
 import memesmallavif from "../assets/avif/memesmall.avif";
@@ -38,13 +37,6 @@ function MemeGen() {
 								and save it to desktop, mobile, or tablet.
 								Created in React.
 							</p>
-						</div>
-						<div className={styles.project_nav}>
-							<p>Next Project:</p>
-							<div className={styles.pagination}>
-								<Link to="/amazingspace">❮</Link>
-								<Link to="/weather">❯</Link>
-							</div>
 						</div>
 					</div>
 				</div>
