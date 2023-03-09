@@ -18,13 +18,14 @@ import ImageFallback from "../../data/ImageFallback";
 function ProjectsSlider() {
 	return (
 		<div className={styles.main}>
-			<h2 className={styles.header}>PORTFOLIO</h2>
+			<h2 className={styles.header}>PROJECTS</h2>
 
 			<div className={styles.row}>
 				<div className={`${styles.column} ${styles.texttoimage}`}>
 					<div className={styles.content}>
 						<a href="https://openai-text-to-image-reactv2.vercel.app">
 							<ImageFallback
+								className={styles.image}
 								src={texttoimageaiavif}
 								fallbackSrc={texttoimageaiwebp}
 								alt="text to img generator"
@@ -74,7 +75,7 @@ function ProjectsSlider() {
 					<div className={styles.content}>
 						<a href="https://gulsah-bayar.vercel.app">
 							<ImageFallback
-								className={styles.image_image}
+								className={styles.image}
 								src={greenpartyavif}
 								fallbackSrc={greenpartywebp}
 								alt="Gülsah Green Party Member"
@@ -99,7 +100,7 @@ function ProjectsSlider() {
 					<div className={styles.content}>
 						<a href="https://memefunv2.netlify.app">
 							<ImageFallback
-								className={styles.image_image}
+								className={styles.image}
 								src={memeavif}
 								fallbackSrc={memewebp}
 								alt="meme generator"
@@ -123,7 +124,7 @@ function ProjectsSlider() {
 					<div className={styles.content}>
 						<a href="https://git-hub-finder-vite.vercel.app/">
 							<ImageFallback
-								className={styles.image_image}
+								className={styles.image}
 								src={githubtwoavif}
 								fallbackSrc={gittwowebp}
 								alt="GitHub Finder"
@@ -141,10 +142,12 @@ function ProjectsSlider() {
 							by entering their username into a search bar. Upon
 							submitting the username, the website displays the
 							user's profile picture, bio, location, and number of
-							followers and following. <br /><br />
-							Additionally, the website displays a list of the user's public repositories
-							with details like the repository name, description,
-							and the number of stars and forks.
+							followers and following. <br />
+							<br />
+							Additionally, the website displays a list of the
+							user's public repositories with details like the
+							repository name, description, and the number of
+							stars and forks.
 						</p>
 					</div>
 				</div>
@@ -152,7 +155,7 @@ function ProjectsSlider() {
 					<div className={styles.content}>
 						<a href="https://amazing-spacetime.netlify.app">
 							<ImageFallback
-								className={styles.image_image}
+								className={styles.image}
 								src={amazingavif}
 								fallbackSrc={amazingwebp}
 								alt="amazing space travel"
@@ -176,7 +179,7 @@ function ProjectsSlider() {
 			<div className={`${styles.content} ${styles.inquilabe}`}>
 				<a href="https://www.inquizable.com/">
 					<ImageFallback
-						className={styles.image_image}
+						className={styles.image}
 						src={inquizableavif}
 						fallbackSrc={inquizablewebp}
 						alt="inquizable.com"

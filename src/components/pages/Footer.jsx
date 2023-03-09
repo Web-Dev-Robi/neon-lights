@@ -19,7 +19,7 @@ function Footer() {
         </div>
         <div className={styles.copyright_link}>
           <div className={styles.copyright}>
-            <p>Copyright &copy; {footerYear} Brian Cordisco</p>
+            <p className={styles.copy_para}>Copyright &copy; {footerYear} Brian Cordisco</p>
           </div>
         </div>
       </div>

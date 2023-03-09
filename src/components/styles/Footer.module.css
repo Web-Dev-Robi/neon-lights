@@ -31,7 +31,15 @@
 }
 
 .copyright_link {
+  margin: 10px 0;
   align-self: center;
+  color: RGB(4, 255, 247);
+}
+
+
+.copy_para {
+  margin: 0;
+  font-size: small;
   color: RGB(4, 255, 247);
 }
 
@@ -49,6 +57,10 @@
 @media screen  and (max-width: 1020px){
   .footer_link {
   font-size: x-small;
+}
+.copy_para {
+  margin: 0;
+  font-size: xx-small;
 }
 
 }
