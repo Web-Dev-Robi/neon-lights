@@ -29,12 +29,10 @@ function WideNav() {
 						className={styles.linkedin}>
 						Linkedin
 					</a>
-					<Link to='/cv'>
-						<a
-							href="null"
-							className={styles.cv}>
-							CV
-						</a>
+					<Link
+						to="/cv"
+						className={styles.cv}>
+						CV
 					</Link>
 					<div className={styles.nav_buttons}>
 						<div className={styles.circle}>

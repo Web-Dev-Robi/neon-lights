@@ -1,27 +1,45 @@
 .main {
-	/* max-width: 30rem; */
+	background-color: black;
+	padding: 1rem clamp(0.8rem, 5%, 3rem);
+	border-radius: 15px;
 }
 
-h1 {
-	font-size: 50px;
-	word-break: keep-all;
+.header {
+	text-align: center;
+	color: #fff;
+	font-size: clamp(1.5rem, calc(2.14rem + -0.71vw), 1.88rem);
 }
 
 .row {
 	display: grid;
-	grid-template-columns: repeat(3, minmax(220px, 1fr));
+	grid-template-columns: repeat(2, minmax(220px, 1fr));
 	grid-template-rows: repeat(3, auto);
 	grid-gap: 1rem;
 }
 
-.github {
-	/* grid-column: 1 / span 2;
-  grid-row-start: 2; */
-	/* padding-bottom: 8px; */
+.project_name {
+	color: black;
+	text-align: center;
+	font-size: 1.5vw;
+	word-spacing: -1px;
+	letter-spacing: 1px;
+}
+
+.inquilabe {
+	margin-top: 1rem;
 }
 
 .para {
+	text-align: left;
+	line-height: 1.2;
+	font-weight: 500;
 	color: black;
+	font-size: 1.5vw;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+	word-wrap: break-word;
+	padding: clamp(0.55rem, 3%, 1.5rem);
 }
 
 .column {
@@ -49,6 +67,10 @@ h1 {
 	.github {
 		grid-column: 2;
 		grid-row-start: 5;
+	}
+
+	.inquilabe {
+		margin-top: 1rem;
 	}
 }
 
