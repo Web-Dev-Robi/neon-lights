@@ -1,90 +1,69 @@
 .main {
-
+	/* max-width: 30rem; */
 }
 
 h1 {
-  font-size: 50px;
-  word-break:keep-all;
+	font-size: 50px;
+	word-break: keep-all;
 }
 
 .row {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  /* grid-template-rows: repeat(3,auto); */
-  grid-gap: 8px;
-}
-/* .row,
-.row > .column {
-  padding: 8px;
-} */
-
-/* .amazingspace {
-  grid-column: 3 / span 2;
-  grid-row-start: 2;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(220px, 1fr));
+	grid-template-rows: repeat(3, auto);
+	grid-gap: 1rem;
 }
 
 .github {
-  grid-column: 1 / span 2;
-  grid-row-start: 2;
-  padding-bottom: 8px;
-} 
-
-/* .inquilabe {
-padding: 8px;
-
-} */
-
-.github {
-  /* grid-column: 1 / span 2;
+	/* grid-column: 1 / span 2;
   grid-row-start: 2; */
-  padding-bottom: 8px;
-} 
-
-.weather {
-
-  
+	/* padding-bottom: 8px; */
 }
 
 .para {
-  color: black;
+	color: black;
 }
 
-
+.column {
+	padding: 10px;
+	border: 1px solid #999;
+	border-radius: 5px;
+	background: #fff;
+}
 
 .content {
-  background-color: white;
-  padding: 10px;
+	background-color: white;
+	padding: 10px;
 }
 
 @media screen and (max-width: 900px) {
- .row {
-  grid-template-columns: repeat(2,1fr);
-}
+	.row {
+		grid-template-columns: repeat(2, 1fr);
+	}
 
-.amazingspace {
-  grid-column: 1;
-  grid-row-start: 5;
-}
+	.amazingspace {
+		grid-column: 1;
+		grid-row-start: 5;
+	}
 
-.github {
-  grid-column: 2;
-  grid-row-start: 5;
+	.github {
+		grid-column: 2;
+		grid-row-start: 5;
+	}
 }
-}
-
 
 @media screen and (max-width: 600px) {
- .row {
-  grid-template-columns: 1fr;
-}
+	.row {
+		grid-template-columns: 1fr;
+	}
 
-.amazingspace {
-  grid-column: 1;
-  grid-row-start: 5;
-}
+	.amazingspace {
+		grid-column: 1;
+		grid-row-start: 5;
+	}
 
-.github {
-  grid-column: 1;
-  grid-row-start: 6;
-}
+	.github {
+		grid-column: 1;
+		grid-row-start: 6;
+	}
 }
