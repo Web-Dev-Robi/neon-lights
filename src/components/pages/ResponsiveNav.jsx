@@ -1,12 +1,12 @@
 import React from "react";
-import Menu from "./Menu";
+import NavBar from "./NavBar";
 import WideNav from "./WideNav";
 
 function ResponsiveNav() {
 	return (
 		<div className="">
 			<WideNav />
-			<Menu />
+			<NavBar />
 		</div>
 	);
 }

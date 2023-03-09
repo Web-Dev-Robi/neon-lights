@@ -15,16 +15,8 @@
 	font-style: italic;
 }
 
-
-
 p {
     color: white;
     text-align: center;
 }
 
-
-@media screen and (max-width: 420px){
-    .container {
-
-    }
-}

@@ -118,7 +118,7 @@ function Contact() {
                   className=""
                 />
               </label>
-              <p className="">
+              <p className={styles.paragraph}>
                 By clicking submit you agree to our terms of service and your
                 data is protected.
               </p>

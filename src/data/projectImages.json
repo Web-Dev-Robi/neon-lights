@@ -1,0 +1,39 @@
+{
+	"images": [
+		{
+			"id": 1,
+			"image": "https://i.ibb.co/dtLTdLB/inquizable.webp",
+			"description": "Inquizable Website"
+		},
+		{
+			"id": 2,
+			"image": "https://i.ibb.co/tQG99Kc/gittwo.webp",
+			"description": "GitHub Finder"
+		},
+		{
+			"id": 3,
+			"image": "https://i.ibb.co/wLvyxnF/meme.webp",
+			"description": "Meme Generator App"
+		},
+		{
+			"id": 4,
+			"image": "https://i.ibb.co/K0fXTrZ/texttoimageai.webp",
+			"description": "Text To Img Generator"
+		},
+		{
+			"id": 5,
+			"image": "https://i.ibb.co/KxHnG7F/amazingspace.webp",
+			"description": "Amazing Space Travel Agency"
+		},
+		{
+			"id": 6,
+			"image": "https://i.ibb.co/VVHSJkJ/green.webp",
+			"description": "Gülsah Bayar Bio/Green Party Site"
+		},
+		{
+			"id": 7,
+			"image": "https://i.ibb.co/fNdWmGL/weather.webp",
+			"description": "Local & Global Weather App"
+		}
+	]
+}

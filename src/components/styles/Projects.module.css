@@ -1,4 +1,4 @@
-.container {
+/* .container {
 	height: 80%;
 	width: min(100%, 75ch);
 	margin: min(4rem, 8vh) auto;
@@ -25,7 +25,6 @@
 	margin-left: auto;
 	margin-right: auto;
 	align-self: center;
-	border: solid 3px green;
 }
 
 .title a {
@@ -76,4 +75,4 @@
 
 .pagination a:hover:not(.active) {
 	background-color: #ddd;
-}
+} */

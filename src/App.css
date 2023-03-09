@@ -23,7 +23,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: clamp(1.5rem, 6%, 3rem);
+  padding: clamp(1.5rem, 9%, 4rem);
   min-height: 100vh;
 }
 
