@@ -10,22 +10,19 @@ import Hobbies from './components/pages/Hobbies';
 import PhotoAlbum from './components/pages/PhotoAlbum';
 import Contact from './components/pages/Contact';
 import Cv from './components/pages/Cv';
-// import TextToImage from './components/pages/TextToImage';
-// import GitHub from './components/pages/GitHub';
-// import Green from './components/pages/Green';
-// import AmazingSpace from './components/pages/AmazingSpace';
-// import MemeGen from './components/pages/MemeGen';
-// import Weather from './components/pages/Weather';
+import ParticlesComponent from './components/Particles';
 
 
 
 function App() {
-
+  
   return (
     <Router>
-      <div className="App">
+      <div>
+        <ParticlesComponent />
+        <div className="App" id="tsparticles">
         <ResponsiveNav />
-        <main className="container">
+        <div className="container">
           <Routes>
             <Route path='/' element={<HomeCard />} />
             <Route path='/aboutme' element={<AboutMe />} />
@@ -35,15 +32,10 @@ function App() {
             <Route path='/photoalbum' element={<PhotoAlbum />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='/cv' element={<Cv />} />
-            {/* <Route path='/texttoimage' element={<TextToImage />} />
-            <Route path='/github' element={<GitHub />} />
-            <Route path='/green' element={<Green />} />
-            <Route path='/amazingspace' element={<AmazingSpace />} />
-            <Route path='/memegen' element={<MemeGen />} />
-            <Route path='/weather' element={<Weather />} /> */}
           </Routes>
-        </main>
+        </div>
         <Footer />
+        </div>
       </div>
     </Router>
   );

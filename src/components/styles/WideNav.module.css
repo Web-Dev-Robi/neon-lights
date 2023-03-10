@@ -4,9 +4,14 @@
 	--clr-neon-blue: hsl(232, 94%, 50%);
 }
 
+.wide_nav {
+	z-index: 2;
+}
+
 .container {
 	padding: 15px;
 	background-color: #1d212e;
+	
 }
 
 .nav_container {
@@ -104,9 +109,9 @@
 	color: hsl(323 21% 16%);
 	text-shadow: none;
 }
-
+/* 
 @media screen and (max-width: 1020px) {
 	.container {
 		visibility: hidden;
 	}
-}
+} */

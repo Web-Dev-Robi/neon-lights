@@ -7,6 +7,7 @@
   border: solid 3px green;
   width: 900px;
   height: 500px;
+  z-index: 1;
 }
 
 .about_me_container {

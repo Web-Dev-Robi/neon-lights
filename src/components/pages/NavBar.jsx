@@ -13,7 +13,6 @@ import { Link } from "react-router-dom";
 function NavBar() {
 	return (
 		<div>
-			<div className={styles.nav_container}></div>
 			<div className={styles.icon_bar}>
 				<Link
 					to="/"

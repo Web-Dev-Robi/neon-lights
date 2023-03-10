@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from '../styles/HomeCard.module.css'
+import ParticlesComponent from "../Particles";
 
 function HomeCard() {
   return (
-    <div>
+    <div className={styles.glass}>
       <div className={styles.container}>
         <div className={styles.title_caption}>
           <h1 className={styles.caption}>

@@ -15,8 +15,11 @@
 		"react-router-dom": "^6.8.1",
 		"react-scripts": "5.0.1",
 		"react-swipe": "^6.0.4",
+		"react-tsparticles": "^2.9.3",
 		"swipe-js-iso": "^2.1.5",
 		"swiper": "^9.0.5",
+		"tsparticles": "^2.9.3",
+		"tsparticles-slim": "^2.9.3",
 		"web-vitals": "^2.1.4",
 		"yup": "^1.0.0"
 	},
