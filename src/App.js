@@ -37,7 +37,6 @@ function App() {
             <Route exact path='/contact' element={<Contact />} />
             <Route exact path='/cv' element={<Cv />} />
           </Routes>
-         
         </div>
         <Footer />
         <MyParicles />
