@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from '../styles/HomeCard.module.css'
-import ParticlesComponent from "../Particles";
+import styles from '../styles/Landing.module.css'
 
 function HomeCard() {
   return (

@@ -4,6 +4,8 @@ import { Swiper } from "swiper/react";
 import styles from "../styles/PhotoAlbum.module.css";
 
 export default function PhotoAlbum() {
+
+	
 	return (
 		<Swiper>
 			<div className={styles.container}>

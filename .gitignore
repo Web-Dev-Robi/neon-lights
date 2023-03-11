@@ -12,6 +12,7 @@
 /build
 
 /templates
+/old
 
 # misc
 .DS_Store

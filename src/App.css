@@ -2,32 +2,45 @@
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  background-color: black;
-  overflow-x: hidden;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: black;
+	overflow-x: hidden;
+	z-index: 1;
 }
 
 .App {
-  display: flex;
-  flex-direction: column;
-  max-width: 1440px;
-  margin: auto;
-  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
-  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
-  z-index: 0;
+	display: flex;
+	flex-direction: column;
+	max-width: 1440px;
+	margin: auto;
+	z-index: 1;
 }
-
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: clamp(1.5rem, 9%, 4rem);
-  min-height: 100vh;
+	/* background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027); */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: clamp(1.5rem, 9%, 4rem);
+	height: 100vh;
+	z-index: 1;
 }
 
-
-
-
+#tsparticles {
+	position: absolute;
+  /* display: grid; */
+  /* top: 0; */
+  left: 0;
+  /* bottom: 0; */
+  right: 0;
+  /* justify-content: center; */
+  /* align-self: center; */
+	height: 100lvh;
+	width: 1440px;
+	z-index: 0;
+	margin-left: auto;
+	margin-right: auto;
+}

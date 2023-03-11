@@ -3,14 +3,20 @@ import { loadFull } from "tsparticles";
 import { loadSlim } from "tsparticles-slim";
 import { useCallback, useMemo } from "react";
 
+export default function MyParticles() {
 
-const ParticlesComponent = () => {
+    const headerHeight = 90; // example header height in pixels
+    const footerHeight = 120; // example footer height in pixels
+    const height = `calc(100vh - ${headerHeight + footerHeight}px)`;
 
     const options = useMemo(() => {
         return {
             fpsLimit: 40,
             fullScreen: {
-                zIndex: 0
+                enable: false,
+                zIndex: -1,
+                height: "100vh",
+                width: "1440px",
             },
             particles: {
                 number: {
@@ -39,7 +45,7 @@ const ParticlesComponent = () => {
                     speed: 4,
                     random: !1
                 },
-                	
+
             },
             interactivity: {
                 detectsOn: "window",
@@ -54,16 +60,36 @@ const ParticlesComponent = () => {
             background: {
                 image: "linear-gradient(to right, #2c5364, #203a43, #0f2027)"
             },
-            
+
         };
     }, []);
-
 
     const particlesInit = useCallback((engine) => {
         loadSlim(engine);
         loadFull(engine);
     }, []);
-    return <Particles init={particlesInit} options={options} />;
-};
 
-export default ParticlesComponent;
+
+
+    return (
+
+      
+       
+        <Particles
+            id="tsparticles"
+            style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                zIndex: -1,
+                width: '1440px',
+                height: { height },
+            }}
+                init={particlesInit}
+                options={options}
+            />
+        
+
+
+    );
+}

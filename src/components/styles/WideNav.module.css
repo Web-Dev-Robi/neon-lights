@@ -5,7 +5,7 @@
 }
 
 .wide_nav {
-	z-index: 2;
+	/* z-index: 2; */
 }
 
 .container {
@@ -109,9 +109,9 @@
 	color: hsl(323 21% 16%);
 	text-shadow: none;
 }
-/* 
+
 @media screen and (max-width: 1020px) {
 	.container {
 		visibility: hidden;
 	}
-} */
+}
