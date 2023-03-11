@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes} from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import React from 'react';
 import './App.css';
 import ResponsiveNav from './components/pages/ResponsiveNav';
@@ -11,7 +11,7 @@ import Hobbies from './components/pages/Hobbies';
 import PhotoAlbum from './components/pages/PhotoAlbum';
 import Contact from './components/pages/Contact';
 import Cv from './components/pages/Cv';
-import MyParicles from './components/MyParticles'
+import MyParicles from './components/MyParticles';
 
 
 
@@ -26,8 +26,9 @@ function App() {
       <div className="App">
         <ResponsiveNav />
         <div className="container">
+          {/* <MyParicles /> */}
           <Routes>
-            <Route exact path='/' element={<Landing/>} />
+            <Route exact path='/' element={<Landing />} />
             <Route exact path='/aboutme' element={<AboutMe />} />
             <Route exact path='/projectsslider' element={<ProjectsSlider />} />
             <Route exact path='/hobbies' element={<Hobbies />} />
@@ -36,11 +37,12 @@ function App() {
             <Route exact path='/contact' element={<Contact />} />
             <Route exact path='/cv' element={<Cv />} />
           </Routes>
+         
         </div>
         <Footer />
         <MyParicles />
       </div>
-  </BrowserRouter>
+    </BrowserRouter>
   );
 }
 

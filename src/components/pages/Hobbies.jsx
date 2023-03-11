@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from "../styles/Hobbies.module.css";
 
 function Hobbies() {
   return (
-    <div>Hobbies</div>
+    <div className={styles.container}>Hobbies</div>
   )
 }
 

@@ -5,12 +5,19 @@
 }
 
 .wide_nav {
-	/* z-index: 2; */
+	position:relative;
+	z-index: 2;
+	
+
 }
 
 .container {
 	padding: 15px;
 	background-color: #1d212e;
+/* max-width: 1440px; */
+	
+
+	
 	
 }
 

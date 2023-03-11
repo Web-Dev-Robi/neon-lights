@@ -5,9 +5,7 @@ import { useCallback, useMemo } from "react";
 
 export default function MyParticles() {
 
-    const headerHeight = 90; // example header height in pixels
-    const footerHeight = 120; // example footer height in pixels
-    const height = `calc(100vh - ${headerHeight + footerHeight}px)`;
+ 
 
     const options = useMemo(() => {
         return {
@@ -15,8 +13,8 @@ export default function MyParticles() {
             fullScreen: {
                 enable: false,
                 zIndex: -1,
-                height: "100vh",
-                width: "1440px",
+                height: window.innerHeight,
+                width: window.innerWidth,
             },
             particles: {
                 number: {
@@ -82,8 +80,8 @@ export default function MyParticles() {
                 top: 0,
                 left: 0,
                 zIndex: -1,
-                width: '1440px',
-                height: { height },
+                width: window.innerHeight,
+                height: window.innerWidth,
             }}
                 init={particlesInit}
                 options={options}
